@@ -84,3 +84,12 @@ body {
   line-height: 32px;
   color: #FFF5E1;
 }
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
