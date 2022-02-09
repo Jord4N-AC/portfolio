@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+#bar-container {
+    background-color: #3C3A39;
+}
+
+#bar-container {
+    color: #fff;
+}
+
+#status-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.28px;
+    width: 54px;
+    height: 16px;
+}
+
+.fas-container .fas {
+    height: 10.67px;
+}
