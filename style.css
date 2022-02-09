@@ -4,6 +4,7 @@ body {
 
 #bar-container {
     background-color: #3C3A39;
+    padding: 0 4%;
 }
 
 #bar-container,
@@ -18,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 3% 0;
 }
 
 .time {    
@@ -42,7 +43,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 3% 0;
 }
 
 .logo {
