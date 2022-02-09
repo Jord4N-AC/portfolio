@@ -93,3 +93,24 @@ body {
   line-height: 24px;
   color: #FFFFFF;
 }
+
+/* Social Media Icons */
+#social-media-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  /* width: 55%; */
+}
+
+.link {
+  padding: 0 3%;
+  color: #DBD8D7;
+}
+
+.link img {
+  width: 21px;
+  height: 21px;
+}
