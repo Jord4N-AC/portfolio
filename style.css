@@ -140,3 +140,18 @@ body {
 .link a:active img {
   filter: saturate(100);
 }
+
+/* Works Section */
+#works-header h2 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #1C1A19;;
+}
+
+#header-line {
+  border-top: 1px solid #212121;
+}
