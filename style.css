@@ -61,8 +61,9 @@ body {
   cursor: pointer;
 }
 
+
 /* Introduction */
-#intro {
+#main-section {
   background-color: #1c1a19;
   background-image: url("images/backgrounds/bg1_mobile.svg");
   background-repeat: no-repeat;
