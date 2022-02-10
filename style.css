@@ -64,6 +64,10 @@ body {
 /* Introduction */
 #intro {
   background-color: #1C1A19;
+  background-image: url("images/backgrounds/bg1_mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 26%;
+  background-position: 100% 115%;
   padding: 25vw 10%;
 }
 
