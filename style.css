@@ -23,7 +23,7 @@ body {
   padding: 3% 0;
 }
 
-.time {    
+.time {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -76,7 +76,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
-  line-height: 64px;  
+  line-height: 64px;
   letter-spacing: 0.37px;
   color: #FF6B00;
   margin: 0;
@@ -118,4 +118,22 @@ body {
 .link img {
   width: 21px;
   height: 21px;
+  transition: all 0.2s;
+}
+
+.link a:link img {
+  filter: none;
+}
+
+.link a:visited img {
+  filter: invert(60%);
+}
+
+.link a:hover img {
+  filter: contrast(200%) brightness(150%);
+  transform: scale(1.4);
+}
+
+.link a:active img {
+  filter: saturate(100);
 }
