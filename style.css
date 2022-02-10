@@ -36,7 +36,7 @@ body {
 }
 
 .fas-container .fas {
-  height: 10.67px;
+  height: 10px;
 }
 
 /* Bar2 Logo and Menu */
@@ -57,8 +57,7 @@ body {
 }
 
 .fa-bars {
-  width: 18px;
-  height: 12px;
+  font-size: 30px;
   cursor: pointer;
 }
 
