@@ -113,6 +113,7 @@ ul {
 .description {
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  max-width: 530px;
 }
 
 /* Social Media Icons */
@@ -299,39 +300,6 @@ ul {
 .card6 { grid-area: card6; }
 .card7 { grid-area: card7; }
 
-@media (min-width: 700px) {
-  #works-section {
-    grid:
-    'header header'
-    'card1 card1'
-    'card2 card3'
-    'card4 card5'
-    'card6 card7';
-  }
-}
-
-@media (min-width: 870px) {
-  #works-header {
-    display: flex;
-  }
-
-  #works-section {
-    grid:
-    'header header header'
-    'card1 card1 card1'
-    'card2 card3 card4'
-    'card5 card6 card7';
-  }
-
-  .card1 {
-    display: flex;
-  }
-
-  .card1 .content {
-    padding-left: 5%;
-  }
-}
-
 /* About Me */
 /* Block 1 */
 #about-me-section {
@@ -342,8 +310,7 @@ ul {
 #about-content {
   background-image: url('images/backgrounds/bg2_mobile.svg');
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: auto;
+  background-position: right bottom;
   border-bottom: 1px solid #fff;
   padding-bottom: 200px;
 }
@@ -357,6 +324,7 @@ ul {
 .about-p {
   font-family: 'Inter', sans-serif;
   color: #F4F5F7;
+  max-width: 530px;
 }
 
 #get-resume-btn {
@@ -380,7 +348,6 @@ ul {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-
   padding-top: 32px;
 }
 
@@ -420,4 +387,64 @@ ul {
 
 #circle-icon {
   border-radius: 50%;
+}
+
+@media (min-width: 580px) {
+  .skill-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    text-align: initial;
+    padding-left: 8%;
+  }
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  #works-section {
+    grid:
+    'header header'
+    'card1 card1'
+    'card2 card3'
+    'card4 card5'
+    'card6 card7';
+  }
+}
+
+@media (min-width: 870px) {
+  /* Works Section */
+  #works-header {
+    display: flex;
+  }
+
+  #works-section {
+    grid:
+    'header header header'
+    'card1 card1 card1'
+    'card2 card3 card4'
+    'card5 card6 card7';
+  }
+
+  .card1 {
+    display: flex;
+  }
+
+  .card1 .content {
+    padding-left: 5%;
+  }
+
+  /* About Me */
+  #about-skills {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15vw;
+    padding-right: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .skill-group {
+    display: initial;
+  }
 }
