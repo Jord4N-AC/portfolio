@@ -220,4 +220,25 @@ body {
   background-color: #FF6B00;
   border: 1px solid #FF6B00;
   color: #fff;
+  transition: all 0.2s;
 }
+
+.btn:visited {
+  color: #5B5957;
+  background-color: #F4F1F0;
+  border: 1px solid #F4F1F0;
+}
+
+.btn:hover {
+  color: #F55800;
+  background-color: #FFF5E1;
+  border: 1px solid #F55800;
+}
+
+.btn:active {
+  color: #F4F1F0;
+  background-color: #E05304;
+  border: 1px solid #E05304;
+  transition: all 0s;
+}
+
