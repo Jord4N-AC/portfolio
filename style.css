@@ -336,6 +336,7 @@ ul {
 /* Block 1 */
 #about-me-section {
   background-color: #1C1A19;
+  padding: 25vw 10% 0 10%;
 }
 
 #about-content {
@@ -366,6 +367,7 @@ ul {
 #about-skills {
   text-align: center;
   color: #fff;
+  padding: 25vw 0;
 }
 
 #about-skills li {
@@ -419,5 +421,3 @@ ul {
 #circle-icon {
   border-radius: 50%;
 }
-
-
