@@ -193,13 +193,16 @@ body {
   flex-wrap: wrap;
 }
 
+.card1 .tag {
+  border: 1px solid #8993A4;
+}
+
 .tag {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  border: 1px solid #8993A4;
   padding: 10px;
   margin: 8px 12px 8px 0;
 }
@@ -240,5 +243,35 @@ body {
   background-color: #E05304;
   border: 1px solid #E05304;
   transition: all 0s;
+}
+
+/* Cars2 */
+.card {
+  background-image: url("images/cards/card2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #1C1A19;
+}
+
+.card .content {
+  padding: 120px 10px 10px 10px;
+}
+
+.card h3,
+.card p,
+.card .tag-group {
+  color: #fff;
+}
+
+.card .tag-group .tag {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.btn-2 {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
