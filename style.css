@@ -372,7 +372,7 @@ ul {
   margin-bottom: 32px;
 }
 
-.skill-header {
+.skill-group {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -382,8 +382,42 @@ ul {
   padding-top: 32px;
 }
 
-.skill-group {
+.skill-header {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.skill-header:hover .list-icon,
+.skill-header:hover #diamond-icon {
+  transform: rotate(180deg);
+}
+
+.skill-header:hover #circle-icon {
+  transform: scale(1.4);
+}
+
+.skills {
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
 }
+
+/*List Icon */
+.list-icon {  
+  display: inline-block;
+  background-color: #FF6B00;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  transition: all 0.2s ease-out;
+}
+
+#diamond-icon {
+  transform: rotate(45deg);
+}
+
+#circle-icon {
+  border-radius: 50%;
+}
+
+
