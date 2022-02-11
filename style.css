@@ -155,3 +155,69 @@ body {
 #header-line {
   border-top: 1px solid #212121;
 }
+
+/* Cards */
+.card1 img {
+  width: 100%;
+}
+
+.card1 h3,
+.card1 p,
+.card1 .tag-group {
+  color: #091E42;
+}
+
+.content h3 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 22px 0;
+}
+
+.content p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.tag-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid #8993A4;
+  padding: 10px;
+  margin: 8px 12px 8px 0;
+}
+
+.main-btn {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #FF6B00;
+  border: 1px solid #FF6B00;
+  color: #fff;
+}
