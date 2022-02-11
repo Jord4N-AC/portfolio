@@ -78,10 +78,13 @@ body {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
+  letter-spacing: 0.37px;
+  color: #ff6b00;  
+}
+
+#intro-header {
   font-size: 56px;
   line-height: 64px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
   margin: 0;
 }
 
@@ -94,12 +97,15 @@ body {
   color: #fff5e1;
 }
 
-.description {
-  font-family: 'Poppins', sans-serif;
+.p-format {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 
@@ -185,10 +191,6 @@ body {
 
 .content p {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
   margin: 0;
 }
 
@@ -322,4 +324,27 @@ body {
   .card1 .content {
     padding-left: 5%;
   }
+}
+
+/* About Me */
+#about-me-section {
+  background-color: #1C1A19;
+}
+
+#about-content {
+  border-bottom: 1px solid #fff;
+}
+
+.about-header {
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.about-p {
+  font-family: 'Inter', sans-serif;
+  color: #F4F5F7;
+}
+
+#get-resume-btn {
+  padding: 10px;
 }
