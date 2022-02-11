@@ -332,12 +332,18 @@ body {
 }
 
 #about-content {
+  background-image: url('images/backgrounds/bg2_mobile.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
   border-bottom: 1px solid #fff;
+  padding-bottom: 200px;
 }
 
 .about-header {
   font-size: 72px;
   line-height: 88px;
+  margin: 0;
 }
 
 .about-p {
