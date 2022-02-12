@@ -3,7 +3,7 @@ This is my frist Portfolio Project, in which I will be including all my pojects 
 
 ## Screenshots
 #### Mobile Version
-![project screenshot](images/screenshots/screenshot_project.png)
+![project screenshot](images/screenshots/screenshot_project2.png)
 
 ## Built With
 - Major languages
