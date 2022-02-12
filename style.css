@@ -424,7 +424,8 @@ ul {
       'card5 card6 card7';
   }
 
-  .crd1, .card {
+  .crd1,
+  .card {
     display: flex;
     flex-direction: column;
   }
