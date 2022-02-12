@@ -13,10 +13,13 @@ body {
   color: #fff;
 }
 
-#status-bar {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+#status-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,10 +81,13 @@ body {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 56px;
-  line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+}
+
+#intro-header {
+  font-size: 56px;
+  line-height: 64px;
   margin: 0;
 }
 
@@ -94,23 +100,24 @@ body {
   color: #fff5e1;
 }
 
-.description {
-  font-family: 'Poppins', sans-serif;
+.p-format {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
   color: #fff;
+  max-width: 530px;
 }
 
 /* Social Media Icons */
 #social-media-links {
-  list-style-type: none;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
 }
 
 .link {
@@ -122,6 +129,10 @@ body {
   width: 21px;
   height: 21px;
   transition: all 0.2s;
+}
+
+.card1 img {
+  width: 100%;
 }
 
 .link a:link img {
@@ -139,4 +150,300 @@ body {
 
 .link a:active img {
   filter: saturate(100);
+}
+
+/* Works Section */
+#works-section {
+  display: grid;
+  grid: 'header' 'card1' 'card2' 'card3' 'card4' 'card5' 'card6' 'card7';
+  grid-gap: 5vw;
+  padding: 15vw 10vw;
+}
+
+#works-header h2 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #1c1a19;
+}
+
+#header-line {
+  border-top: 1px solid #212121;
+}
+
+/* Cards */
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card1 h3,
+.card1 p,
+.card1 .tag-group {
+  color: #091e42;
+}
+
+.content h3 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 22px 0;
+}
+
+.content p {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.tag {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 8px 12px 8px 0;
+}
+
+.card1 .tag {
+  border: 1px solid #8993a4;
+}
+
+.main-btn {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.btn:visited {
+  color: #5b5957;
+  background-color: #f4f1f0;
+  border: 1px solid #f4f1f0;
+}
+
+.btn:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.btn:active {
+  color: #f4f1f0;
+  background-color: #e05304;
+  border: 1px solid #e05304;
+  transition: all 0s;
+}
+
+/* Cars2 */
+.card {
+  background-image: url("images/cards/card2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .content {
+  padding: 35% 10px 10px 10px;
+}
+
+.card h3,
+.card p,
+.card .tag-group {
+  color: #fff;
+}
+
+.card .tag-group .tag {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.btn-2 {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Grid Areas */
+#works-header { grid-area: header; }
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+
+/* About Me */
+
+/* Block 1 */
+#about-me-section {
+  background-color: #1c1a19;
+
+  /* padding: 25vw 10% 0 10%; */
+}
+
+#about-content {
+  background-image: url('images/backgrounds/bg2_mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 25vw 10% 0 10%;
+}
+
+.about-header {
+  font-size: 72px;
+  line-height: 88px;
+  margin: 0;
+}
+
+.about-p {
+  font-family: 'Inter', sans-serif;
+  color: #f4f5f7;
+  max-width: 530px;
+}
+
+#get-resume-btn {
+  padding: 10px;
+}
+
+.about-line {
+  padding-top: 200px;
+  border-bottom: 1px solid #fff;
+}
+
+/* Block 2 */
+#about-skills {
+  text-align: center;
+  color: #fff;
+  padding: 25vw 10%;
+}
+
+#about-skills li {
+  margin-bottom: 32px;
+}
+
+.skill-group {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 32px;
+}
+
+.skill-header {
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.list-icon {
+  display: inline-block;
+  background-color: #ff6b00;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  transition: all 0.2s ease-out;
+}
+
+#diamond-icon {
+  transform: rotate(45deg);
+}
+
+.skill-header:hover .list-icon,
+.skill-header:hover #diamond-icon {
+  transform: rotate(180deg);
+}
+
+#circle-icon {
+  border-radius: 50%;
+}
+
+.skill-header:hover #circle-icon {
+  transform: scale(1.4);
+}
+
+.skills {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+/* List Icon */
+@media (min-width: 580px) {
+  .skill-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    text-align: initial;
+    padding-left: 8%;
+  }
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  #works-section {
+    grid:
+      'header header'
+      'card1 card1'
+      'card2 card3'
+      'card4 card5'
+      'card6 card7';
+  }
+}
+
+@media (min-width: 870px) {
+  /* Works Section */
+  #works-header {
+    display: flex;
+  }
+
+  #works-section {
+    grid:
+      'header header header'
+      'card1 card1 card1'
+      'card2 card3 card4'
+      'card5 card6 card7';
+  }
+
+  .crd1,
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card1 .content {
+    padding-left: 5%;
+  }
+
+  /* About Me */
+  #about-skills {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15vw;
+    padding-right: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .skill-group {
+    display: initial;
+  }
 }
