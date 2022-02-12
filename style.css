@@ -20,9 +20,6 @@ ul {
 }
 
 #status-bar {
-  /* list-style-type: none;
-  margin: 0; */
-  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,9 +115,6 @@ ul {
 
 /* Social Media Icons */
 #social-media-links {
-  /* list-style-type: none;
-  margin: 0;
-  padding: 0; */
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -202,9 +196,6 @@ ul {
 }
 
 .tag-group {
-  /* list-style-type: none;
-  margin: 0;
-  padding: 0; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -304,15 +295,14 @@ ul {
 /* Block 1 */
 #about-me-section {
   background-color: #1C1A19;
-  padding: 25vw 10% 0 10%;
+  /* padding: 25vw 10% 0 10%; */
 }
 
 #about-content {
   background-image: url('images/backgrounds/bg2_mobile.svg');
   background-repeat: no-repeat;
   background-position: right bottom;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 200px;
+  padding: 25vw 10% 0 10%;
 }
 
 .about-header {
@@ -331,11 +321,16 @@ ul {
   padding: 10px;
 }
 
+.about-line {
+  padding-top: 200px;
+  border-bottom: 1px solid #fff;
+}
+
 /* Block 2 */
 #about-skills {
   text-align: center;
   color: #fff;
-  padding: 25vw 0;
+  padding: 25vw 10%;
 }
 
 #about-skills li {
