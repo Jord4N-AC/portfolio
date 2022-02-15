@@ -447,3 +447,27 @@ ul {
     display: initial;
   }
 }
+
+footer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h2 {
+  margin: 120px 24px 73px 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color:#172B4D;
+  text-align: center;
+}
+
+form input {
+  width: 295px;
+  height: 18px;
+  border: 2px solid green;
+  margin: 15px 16px;
+}
