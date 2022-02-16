@@ -454,6 +454,10 @@ footer {
   flex-direction: column;
 }
 
+#form-container {
+  padding: 25vw 10% 25vw 10%;
+}
+
 #form-container h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -478,8 +482,12 @@ form textarea {
   font-size: 15px;
   line-height: 24px;
   padding: 15px;
+}
 
-  margin-top: 10px;
+form input,
+form textarea,
+#get-in-touch-btn {
+  margin-top: 24px;
 }
 
 form input {
