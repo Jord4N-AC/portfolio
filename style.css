@@ -77,7 +77,7 @@ ul {
   padding: 25vw 10%;
 }
 
-.header1 {
+.header1-format {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
@@ -85,13 +85,13 @@ ul {
   color: #ff6b00;
 }
 
-#intro-header {
+#intro-header1 {
   font-size: 56px;
   line-height: 64px;
   margin: 0;
 }
 
-.header2 {
+.intro-header2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -339,12 +339,16 @@ ul {
   margin-bottom: 32px;
 }
 
-.skill-group {
+.header2-format {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
+  text-align: center;
+}
+
+.skill-group {
   padding-top: 32px;
 }
 
@@ -380,6 +384,9 @@ ul {
 }
 
 .skills {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: center;
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
@@ -395,13 +402,7 @@ footer {
   padding: 25vw 10% 25vw 10%;
 }
 
-#form-container h2 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
+#form-header {
   color: #172B4D;  
 }
 
