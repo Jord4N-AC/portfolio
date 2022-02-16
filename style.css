@@ -114,7 +114,7 @@ ul {
 }
 
 /* Social Media Icons */
-#social-media-links {
+.social-media-links {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -527,3 +527,17 @@ form textarea::placeholder {
   align-self: center;
 }
 
+#social-media-2 {
+  justify-content: center;
+  padding: 8vw 0;
+  border-top: 1px solid #DFE1E6;
+}
+
+#divider {
+  align-self: center;
+  width: 35%;
+  height: 5px;
+  background: #0D151E;
+  border-radius: 10px;
+  margin: 0 0 3% 0;
+}
