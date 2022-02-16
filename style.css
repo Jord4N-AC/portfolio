@@ -477,13 +477,13 @@ form textarea {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+  padding: 15px;
 
   margin-top: 10px;
 }
 
 form input {
   color: #172B4D;
-  padding: 15px;
   border: none;
   border-bottom: 1px solid #DBD8D7;
 }
@@ -499,9 +499,15 @@ form input:focus {
   border-bottom: 3px solid #000;
 }
 
+form textarea {
+  background-color: #FBF8F7;
+  width: auto;
+  border: none;
+  resize: vertical;
+}
+
 form textarea::placeholder {
   color: #3C3A39;
-
 }
 
 #first-last-name {
