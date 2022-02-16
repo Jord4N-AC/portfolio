@@ -28,8 +28,8 @@
     </header>
     <section id="main-section">
         <div id="intro">
-            <h1 id="intro-header" class="header1">Hey There.<br>I’m Jordan</h1>
-            <h3 class="header2">I’am a Software Developer</h3>
+            <h1 id="intro-header1" class="header1-format">Hey There.<br>I’m Jordan</h1>
+            <h3 class="intro-header2">I’am a Software Developer</h3>
             <p class="description p-format">
                 I can help you build a product , feature or website 
                 Look through some of my work and experience! 
@@ -37,7 +37,7 @@
                 don’t hestiate to contact me.
             </p>
         </div>
-        <ul id="social-media-links">
+        <ul class="social-media-links">
             <li class="link">
                 <a href="https://github.com/Jord4N-AC"><img src="images/Icons/github_icon.svg" alt="github icon"></a>
             </li>
@@ -175,7 +175,7 @@
     <!-- About Me Section -->
     <section id="about-me-section">
         <div id="about-content">
-            <h2 class="header1 about-header">About me</h2>
+            <h2 class="header1-format about-header">About me</h2>
             <p class="p-format about-p">
                 Hello I’m a software developer! I can help you build a product , feature or website Look through 
                 some of my work and experience! If you like what you see and have a project you need coded, 
@@ -186,7 +186,7 @@
         </div>
         <ul id="about-skills">
             <li class="skill-group">
-                <div class="skill-header">
+                <div class="skill-header header2-format">
                     <div id="diamond-icon" class="list-icon"></div>Language
                 </div>
                 <ul class="skills">
@@ -197,7 +197,7 @@
                 </ul>
             </li>
             <li class="skill-group">
-                <div class="skill-header">
+                <div class="skill-header header2-format">
                     <div id="square-icon" class="list-icon"></div>Frameworks
                 </div>
                 <ul class="skills">
@@ -209,7 +209,7 @@
                 </ul>
             </li>
             <li class="skill-group">
-                <div class="skill-header">
+                <div class="skill-header header2-format">
                     <div id="circle-icon" class="list-icon"></div>Skills
                 </div>
                 <ul class="skills">
@@ -222,5 +222,40 @@
             </li>
         </ul>
     </section>
+    <footer>
+        <div id="form-container">
+            <h2 id="form-header" class="header2-format">
+                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
+            <form action="https://formspree.io/f/mnqwddwk" method="post">
+                <input class="mobile" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
+                <fieldset id="first-last-name">               
+                    <input type="text" name="first_name" placeholder="First name" maxlength="30" required>
+                    <input type="text" name="last_name" placeholder="Last name" maxlength="30" required>
+                </fieldset>
+                <input type="email" name="email" placeholder="Email address" required>
+                <textarea maxlength="500" placeholder="Enter text here" required></textarea>
+                <button id="get-in-touch-btn" class="btn" type="submit">Get in touch</button>
+            </form>
+        </div>
+        <ul id="social-media-2" class="social-media-links">
+            <li class="link">
+                <a href="https://github.com/Jord4N-AC"><img src="images/Icons/github_icon_dark.svg" alt="github icon"></a>
+            </li>
+            <li class="link">
+                <a href="https://www.linkedin.com/in/camilo-armijos-2b9648197/"><img src="images/Icons/linkedin_icon_dark.svg" alt="linkedin icon"></a>
+            </li>
+            <li class="link">
+                <a href="https://www.angellist.com/"><img src="images/Icons/angelist_icon_dark.svg" alt="angelist icon"></a>
+            </li>
+            <li class="link">
+                <a href="https://twitter.com/jordan12AC"><img src="images/Icons/twitter_icon_dark.svg" alt="twitter icon"></a>
+            </li>
+            <li class="link">
+                <a href="https://medium.com/"><img src="images/Icons/medium_icon_dark.svg" alt="medium_icon"></a>
+            </li>
+        </ul>
+        <div id="divider"></div>
+    </footer>
 </body>
 </html>
