@@ -3,7 +3,7 @@ This is my frist Portfolio Project, in which I will be including all my pojects 
 
 ## Screenshots
 #### Mobile Version
-![project screenshot](images/screenshots/screenshot_project2.png)
+![project screenshot](images/screenshots/screenshot_project3.png)
 
 ## Built With
 - Major languages
@@ -40,6 +40,11 @@ For deployment please rich out to the owner of this project
 - GitHub: [Jord4N-AC](https://github.com/Jord4N-AC)
 - Twitter: [@jordan12AC](https://twitter.com/jordan12AC)
 - LinkedIn: [Camilo Armijos](https://www.linkedin.com/in/camilo-armijos-2b9648197)
+
+👤 Abdullateef Bello
+- GitHub: [Ibnballo1](https://github.com/Ibnballo1)
+- LinkedIn: [Abdullateef Bello](https://www.linkedin.com/in/camilo-armijos-2b9648197)
+
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
