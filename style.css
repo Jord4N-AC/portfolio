@@ -385,69 +385,6 @@ ul {
   line-height: 43px;
 }
 
-/* List Icon */
-@media (min-width: 580px) {
-  .skill-group {
-    display: flex;
-    justify-content: center;
-  }
-
-  .skills {
-    text-align: initial;
-    padding-left: 8%;
-  }
-}
-
-/* Media Queries */
-@media (min-width: 700px) {
-  #works-section {
-    grid:
-      'header header'
-      'card1 card1'
-      'card2 card3'
-      'card4 card5'
-      'card6 card7';
-  }
-}
-
-@media (min-width: 870px) {
-  /* Works Section */
-  #works-header {
-    display: flex;
-  }
-
-  #works-section {
-    grid:
-      'header header header'
-      'card1 card1 card1'
-      'card2 card3 card4'
-      'card5 card6 card7';
-  }
-
-  .crd1,
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card1 .content {
-    padding-left: 5%;
-  }
-
-  /* About Me */
-  #about-skills {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15vw;
-    padding-right: 10vw;
-    padding-bottom: 15vw;
-  }
-
-  .skill-group {
-    display: initial;
-  }
-}
-
 /* Contact Form */
 footer {
   display: flex;
@@ -466,7 +403,6 @@ footer {
   line-height: 44px;
   text-align: center;
   color: #172B4D;  
-  /* margin: 120px 24px 73px 24px; */
 }
 
 form  {
@@ -540,4 +476,98 @@ form textarea::placeholder {
   background: #0D151E;
   border-radius: 10px;
   margin: 0 0 3% 0;
+}
+
+/* Media Queries */
+@media (min-width: 580px) {
+  .skill-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    text-align: initial;
+    padding-left: 8%;
+  }
+}
+
+@media (min-width: 700px) {
+  #works-section {
+    grid:
+      'header header'
+      'card1 card1'
+      'card2 card3'
+      'card4 card5'
+      'card6 card7';
+  }
+}
+
+@media (min-width: 870px) {
+  /* Works Section */
+  #works-header {
+    display: flex;
+  }
+
+  #works-section {
+    grid:
+      'header header header'
+      'card1 card1 card1'
+      'card2 card3 card4'
+      'card5 card6 card7';
+  }
+
+  .crd1,
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card1 .content {
+    padding-left: 5%;
+  }
+
+  /* About Me */
+  #about-skills {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15vw;
+    padding-right: 10vw;
+    padding-bottom: 15vw;
+  }
+
+  .skill-group {
+    display: initial;
+  }
+
+  /* Form */
+  #form-container {
+    padding: 10%;
+  }
+
+  #form-container h2 {
+    width: 40%;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  #form-container {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  #first-last-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+  }
+
+  #divider {
+    display: none;
+  }
 }
