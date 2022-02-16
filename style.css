@@ -403,10 +403,10 @@ footer {
 }
 
 #form-header {
-  color: #172B4D;  
+  color: #172b4d;
 }
 
-form  {
+form {
   display: flex;
   flex-direction: column;
 }
@@ -428,14 +428,14 @@ form textarea,
 }
 
 form input {
-  color: #172B4D;
+  color: #172b4d;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 form input::placeholder {
   color: #979493;
-  }
+}
 
 form input:focus {
   background-color: #9eb8e454;
@@ -449,14 +449,14 @@ form input:focus {
 }
 
 form textarea {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   width: auto;
   border: none;
   resize: vertical;
 }
 
 form textarea::placeholder {
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 #get-in-touch-btn {
@@ -467,14 +467,14 @@ form textarea::placeholder {
 #social-media-2 {
   justify-content: center;
   padding: 8vw 0;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
 }
 
 #divider {
   align-self: center;
   width: 35%;
   height: 5px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   margin: 0 0 3% 0;
 }
@@ -543,18 +543,15 @@ form textarea::placeholder {
   /* Form */
   #form-container {
     padding: 10%;
+    display: flex;
   }
 
-  #form-container h2 {
+  #form-header {
     width: 40%;
   }
 
   form {
     width: 60%;
-  }
-
-  #form-container {
-    display: flex;
   }
 
   .mobile {
