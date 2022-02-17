@@ -5,7 +5,7 @@ body {
 
 #bar-container {
   background-color: #3c3a39;
-  padding: 3% 10%;
+  padding: 3% 8%;
 }
 
 #bar-container,
@@ -105,16 +105,18 @@ a {
 
 /* Introduction */
 #main-section {
+  display: flex;
+  flex-direction: column;
   background-color: #1c1a19;
   background-image: url("images/backgrounds/bg1_mobile.svg");
   background-repeat: no-repeat;
   background-size: 26%;
+  background-position: 100% 100%;
   
   /* background-size: 35%; */
   /* background-position: 100% 115%; */
   
-  background-position: 100% 100%;
-  padding: 25vw 10%;
+  padding: 20vw 8%;
 }
 
 .header1-format {
@@ -197,7 +199,7 @@ a {
   display: grid;
   grid: 'header' 'card1' 'card2' 'card3' 'card4' 'card5' 'card6' 'card7';
   grid-gap: 5vw;
-  padding: 15vw 10vw;
+  padding: 15vw 8vw;
 }
 
 #works-header h2 {
@@ -343,7 +345,7 @@ a {
   background-image: url('images/backgrounds/bg2_mobile.svg');
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding: 25vw 10% 0 10%;
+  padding: 20vw 8% 0 8%;
 }
 
 .about-header {
@@ -371,7 +373,7 @@ a {
 #about-skills {
   text-align: center;
   color: #fff;
-  padding: 25vw 10%;
+  padding: 15vw 8%;
 }
 
 #about-skills li {
@@ -438,7 +440,7 @@ footer {
 }
 
 #form-container {
-  padding: 25vw 10% 25vw 10%;
+  padding: 20vw 8%;
 }
 
 #form-header {
@@ -570,9 +572,9 @@ form textarea::placeholder {
   #about-skills {
     display: flex;
     justify-content: space-between;
-    padding-top: 15vw;
+    /* padding-top: 15vw;
     padding-right: 10vw;
-    padding-bottom: 15vw;
+    padding-bottom: 15vw; */
   }
 
   .skill-group {

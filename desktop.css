@@ -1,3 +1,6 @@
+#bar-container {
+  padding: 2% 8%;
+}
 #menu-desktop {
   display: flex;
 }
@@ -6,9 +9,28 @@
   display: none;
 }
 
-#main-section {
+#main-section {  
+  flex-direction: row-reverse;
+  justify-content: start;
   background-image: url("images/backgrounds/bg1_desktop.svg");
   background-repeat: no-repeat;
   background-position: right 20%;
   background-size: 45%;
-} 
+  padding-left: 0;
+}
+
+#intro {
+  padding-left: 2%;
+}
+
+#social-media-1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2%;
+}
+
+#social-media-1 .link {
+  padding: 0;
+  margin: 9px 0;
+}
