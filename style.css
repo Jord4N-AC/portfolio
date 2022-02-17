@@ -214,6 +214,7 @@ a {
 
 #header-line {
   border-top: 1px solid #212121;
+  width: 100%;
 }
 
 /* Cards */
@@ -545,11 +546,6 @@ form textarea::placeholder {
 }
 
 @media (min-width: 870px) {
-  /* Works Section */
-  #works-header {
-    display: flex;
-  }
-
   #works-section {
     grid:
       'header header header'

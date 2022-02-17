@@ -34,3 +34,15 @@
   padding: 0;
   margin: 9px 0;
 }
+
+/* Works Section */
+#works-header {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+}
+
+#works-header h2 {    
+  text-align: initial;
+  width: 100%;
+}
