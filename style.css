@@ -76,11 +76,30 @@ a {
   color: #FFFFFF;
   margin-left: 15px;
   margin-right: 15px;
+  transition: all 0.4s;
 }
 
-#menu-icon {
+.menu-link:hover {
+  color: #F55800;
+}
+
+.menu-link:active {
+  transition: all 0s;
+  color: #fff;
+}
+
+#email-icon {
   cursor: pointer;
   margin-left: 15px;
+  transition: all 0.4s;
+}
+
+#email-icon:hover {
+  transform: scale(1.3);
+}
+
+#email-icon:active {
+  transform: scale(1);
 }
 
 
