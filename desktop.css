@@ -1,0 +1,7 @@
+#menu-desktop {
+  display: flex;
+}
+
+.fa-bars {
+  display: none;
+}
