@@ -108,11 +108,12 @@ a {
   background-color: #1c1a19;
   background-image: url("images/backgrounds/bg1_mobile.svg");
   background-repeat: no-repeat;
-  background-size: 35%;
-
-  /* background-size: 26%; */
-
-  background-position: 100% 115%;
+  background-size: 26%;
+  
+  /* background-size: 35%; */
+  /* background-position: 100% 115%; */
+  
+  background-position: 100% 100%;
   padding: 25vw 10%;
 }
 
@@ -149,7 +150,7 @@ a {
 .description {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  max-width: 530px;
+  max-width: 520px;
 }
 
 /* Social Media Icons */

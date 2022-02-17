@@ -5,3 +5,10 @@
 .fa-bars {
   display: none;
 }
+
+#main-section {
+  background-image: url("images/backgrounds/bg1_desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right 20%;
+  background-size: 45%;
+} 
