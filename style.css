@@ -445,7 +445,7 @@ footer {
 }
 
 #form-container {
-  padding: 20vw 8%;
+  padding: 15vw 8%;
 }
 
 #form-header {
@@ -455,6 +455,8 @@ footer {
 form {
   display: flex;
   flex-direction: column;
+  max-width: 520px;
+  margin: auto;
 }
 
 form input,
@@ -550,23 +552,5 @@ form textarea::placeholder {
   .card {
     display: flex;
     flex-direction: column;
-  }
-
-  /* Form */
-  #form-container {
-    padding: 10%;
-    display: flex;
-  }
-
-  #form-header {
-    width: 40%;
-  }
-
-  form {
-    width: 60%;
-  }
-
-  #divider {
-    display: none;
-  }
+  }  
 }

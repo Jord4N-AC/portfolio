@@ -145,3 +145,28 @@
 .skills {
   padding-left: 0;
 }
+
+/* Contact Form */
+/* Form */
+  #form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #form-header {
+    text-align: initial;
+    width: 40%;
+  }
+
+  form {
+    width: 55%;
+    margin: 0;
+  }
+  
+  #get-in-touch-btn {
+    align-self: start;
+  }
+
+  #divider {
+    display: none;
+  }
