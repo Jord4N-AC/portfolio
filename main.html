@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/242e63f88a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;300;400;500;700;900&family=Poppins:wght@100;400;500;700;900&family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">    
@@ -13,17 +14,16 @@
 </head>
 <body>
     <header id="bar-container">
-        <ul id="status-bar">
-            <li class="time">9:41</li>
-            <li class="fas-container">
-                <i class="fas fa-signal"></i>
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-battery-full"></i>
-            </li>
-        </ul>
         <div id="tool-bar">
             <a class="logo" href="#">John Doe</a>
             <nav><i class="fas fa-bars"></i></nav>
+            <!-- Desktop Menu -->
+            <nav id="menu-desktop">
+                <a class="menu-link menu-item" href="#works-section">Portfolio</a>
+                <a class="menu-link menu-item" href="#about-me-section">About</a>
+                <a class="menu-link menu-item" href="#form-container">Contact</a>
+                <img id="email-icon" class="menu-item" src="images/Icons/mail_icon.svg" title="Emails" alt="E-mail icon">
+            </nav>
         </div>
     </header>
     <section id="main-section">
@@ -37,7 +37,7 @@
                 don’t hestiate to contact me.
             </p>
         </div>
-        <ul class="social-media-links">
+        <ul id="social-media-1" class="social-media-links">
             <li class="link">
                 <a href="https://github.com/Jord4N-AC"><img src="images/Icons/github_icon.svg" alt="github icon"></a>
             </li>
@@ -51,7 +51,7 @@
                 <a href="https://twitter.com/jordan12AC"><img src="images/Icons/twitter_icon.svg" alt="twitter icon"></a>
             </li>
             <li class="link">
-                <a href="https://medium.com/"><img src="images/Icons/medium_icon.svg" alt="medium_icon"></a>
+                <a href="https://medium.com/"><img src="images/Icons/medium_icon.svg" alt="medium icon"></a>
             </li>
         </ul>
     </section>
@@ -172,7 +172,7 @@
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About Section -->
     <section id="about-me-section">
         <div id="about-content">
             <h2 class="header1-format about-header">About me</h2>
@@ -222,17 +222,15 @@
             </li>
         </ul>
     </section>
+
+    <!-- Contact Form -->
     <footer>
         <div id="form-container">
             <h2 id="form-header" class="header2-format">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h2>
             <form action="https://formspree.io/f/mnqwddwk" method="post">
-                <input class="mobile" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
-                <fieldset id="first-last-name">               
-                    <input type="text" name="first_name" placeholder="First name" maxlength="30" required>
-                    <input type="text" name="last_name" placeholder="Last name" maxlength="30" required>
-                </fieldset>
+                <input class="mobile" type="text" name="full_name" placeholder="Full name" maxlength="30" required>                
                 <input type="email" name="email" placeholder="Email address" required>
                 <textarea maxlength="500" placeholder="Enter text here" required></textarea>
                 <button id="get-in-touch-btn" class="btn" type="submit">Get in touch</button>
@@ -252,7 +250,7 @@
                 <a href="https://twitter.com/jordan12AC"><img src="images/Icons/twitter_icon_dark.svg" alt="twitter icon"></a>
             </li>
             <li class="link">
-                <a href="https://medium.com/"><img src="images/Icons/medium_icon_dark.svg" alt="medium_icon"></a>
+                <a href="https://medium.com/"><img src="images/Icons/medium_icon_dark.svg" alt="medium icon"></a>
             </li>
         </ul>
         <div id="divider"></div>
