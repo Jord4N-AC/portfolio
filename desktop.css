@@ -120,4 +120,28 @@
 
 .card:hover .content {
   visibility: hidden;
-} 
+}
+
+/* About Section */
+#about-content {
+  background-image: url('images/backgrounds/bg2_desktop.svg');
+  background-size: 40%;
+  background-position: right center;
+}
+
+ #about-skills {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  /* padding-top: 15vw;
+  padding-right: 10vw;
+  padding-bottom: 15vw; */
+}
+
+.skill-group {
+  display: initial;
+}
+
+.skills {
+  padding-left: 0;
+}

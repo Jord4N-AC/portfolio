@@ -112,10 +112,10 @@ a {
   background-repeat: no-repeat;
   background-size: 26%;
   background-position: 100% 100%;
-  
+
   /* background-size: 35%; */
   /* background-position: 100% 115%; */
-  
+
   padding: 20vw 8%;
 }
 
@@ -337,7 +337,7 @@ a {
 .card6 { grid-area: card6; }
 .card7 { grid-area: card7; }
 
-/* About Me */
+/* About Section */
 
 /* Block 1 */
 #about-me-section {
@@ -554,19 +554,6 @@ form textarea::placeholder {
   .card {
     display: flex;
     flex-direction: column;
-  }
-
-  /* About Me */
-  #about-skills {
-    display: flex;
-    justify-content: space-between;
-    /* padding-top: 15vw;
-    padding-right: 10vw;
-    padding-bottom: 15vw; */
-  }
-
-  .skill-group {
-    display: initial;
   }
 
   /* Form */
