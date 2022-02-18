@@ -174,7 +174,11 @@ a {
 }
 
 .card1 img {
+  display: block;
+  max-width: 600px;
+  min-width: 100px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .link a:link img {
@@ -558,10 +562,6 @@ form textarea::placeholder {
   .card {
     display: flex;
     flex-direction: column;
-  }
-
-  .card1 .content {
-    padding-left: 5%;
   }
 
   /* About Me */

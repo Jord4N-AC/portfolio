@@ -46,3 +46,21 @@
   text-align: initial;
   width: 100%;
 }
+
+#main-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.card1 img {
+  margin: 0;
+}
+
+.card1 .content {
+  width: 45%;
+  margin-left: 5%;
+}
+
+.card1 h3 {
+  margin-top: 0;
+}
