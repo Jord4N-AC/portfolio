@@ -64,3 +64,48 @@
 .card1 h3 {
   margin-top: 0;
 }
+
+.card2, .card5 {
+  background-image: url("images/cards/card2.svg");
+  mask-image: linear-gradient(black, transparent);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card3, .card6 {
+  background-image: url("images/cards/card_3&6_desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card4, .card7 {
+  background-image: url("images/cards/card_4&7_desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#works-section {
+  grid:
+    'header header header'
+    'card1 card1 card1'
+    'card2 card3 card4'
+    'card5 card6 card7';
+}
+
+.card .content,
+.card .btn-2 {
+  transition: all 0.2s;
+}
+
+.btn-2 {
+  visibility: hidden;
+}
+
+.card:hover .btn-2 {
+  visibility: visible;
+}
+
+.card:hover .content {
+  visibility: hidden;
+} 

@@ -202,7 +202,7 @@ a {
 #works-section {
   display: grid;
   grid: 'header' 'card1' 'card2' 'card3' 'card4' 'card5' 'card6' 'card7';
-  grid-gap: 5vw;
+  grid-gap: 4vw;
   padding: 15vw 8vw;
 }
 
@@ -550,14 +550,6 @@ form textarea::placeholder {
 }
 
 @media (min-width: 870px) {
-  #works-section {
-    grid:
-      'header header header'
-      'card1 card1 card1'
-      'card2 card3 card4'
-      'card5 card6 card7';
-  }
-
   .crd1,
   .card {
     display: flex;
