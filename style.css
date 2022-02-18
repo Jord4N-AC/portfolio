@@ -510,7 +510,7 @@ form textarea::placeholder {
 
 #social-media-2 {
   justify-content: center;
-  padding: 8vw 0;
+  padding: 24px 0;
   border-top: 1px solid #dfe1e6;
 }
 
@@ -520,7 +520,7 @@ form textarea::placeholder {
   height: 5px;
   background: #0d151e;
   border-radius: 10px;
-  margin: 0 0 3% 0;
+  margin: 0 0 10px 0;
 }
 
 /* Media Queries */
