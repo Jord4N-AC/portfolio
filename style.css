@@ -490,10 +490,6 @@ form input:focus {
   border-bottom: 3px solid #000;
 }
 
-#first-last-name {
-  display: none;
-}
-
 form textarea {
   background-color: #fbf8f7;
   width: auto;
@@ -568,17 +564,6 @@ form textarea::placeholder {
 
   form {
     width: 60%;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  #first-last-name {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    border: none;
   }
 
   #divider {
