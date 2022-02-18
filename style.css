@@ -73,14 +73,14 @@ a {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #fff;
   margin-left: 15px;
   margin-right: 15px;
   transition: all 0.4s;
 }
 
 .menu-link:hover {
-  color: #F55800;
+  color: #f55800;
 }
 
 .menu-link:active {
@@ -102,7 +102,6 @@ a {
   transform: scale(1);
 }
 
-
 /* Introduction */
 #main-section {
   display: flex;
@@ -114,6 +113,7 @@ a {
   background-position: 100% 100%;
 
   /* background-size: 35%; */
+
   /* background-position: 100% 115%; */
 
   padding: 20vw 8%;
@@ -552,5 +552,5 @@ form textarea::placeholder {
   .card {
     display: flex;
     flex-direction: column;
-  }  
+  }
 }

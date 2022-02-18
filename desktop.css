@@ -1,6 +1,7 @@
 #bar-container {
   padding: 2% 8%;
 }
+
 #menu-desktop {
   display: flex;
 }
@@ -9,7 +10,7 @@
   display: none;
 }
 
-#main-section {  
+#main-section {
   flex-direction: row-reverse;
   justify-content: start;
   background-image: url("images/backgrounds/bg1_desktop.svg");
@@ -38,11 +39,10 @@
 /* Works Section */
 #works-header {
   display: flex;
-  justify-content: flex;
   align-items: center;
 }
 
-#works-header h2 {    
+#works-header h2 {
   text-align: initial;
   width: 100%;
 }
@@ -69,7 +69,8 @@
   transition: all 0.3s;
 }
 
-.card2, .card5 {
+.card2,
+.card5 {
   background-image: url("images/cards/card2-7_mob_2&5_desk_dark.svg");
   mask-image: linear-gradient(black, transparent);
   background-repeat: no-repeat;
@@ -77,28 +78,34 @@
   background-position: center;
 }
 
-.card3, .card6 {
+.card3,
+.card6 {
   background-image: url("images/cards/card_3&6_desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.card4, .card7 {
+
+.card4,
+.card7 {
   background-image: url("images/cards/card_4&7_desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.card2:hover, .card5:hover {
+.card2:hover,
+.card5:hover {
   background-image: url("images/cards/card_2&5_desktop_light.svg");
 }
 
-.card3:hover, .card6:hover {
+.card3:hover,
+.card6:hover {
   background-image: url("images/cards/card_3&6_desktop_light.svg");
 }
 
-.card4:hover, .card7:hover {
+.card4:hover,
+.card7:hover {
   background-image: url("images/cards/card_4&7_desktop_light.svg");
 }
 
@@ -129,10 +136,11 @@
   background-position: right center;
 }
 
- #about-skills {
+#about-skills {
   display: flex;
   justify-content: space-between;
   margin-right: 10%;
+
   /* padding-top: 15vw;
   padding-right: 10vw;
   padding-bottom: 15vw; */
@@ -147,27 +155,28 @@
 }
 
 /* Contact Form */
+
 /* Form */
-  #form-container {
-    display: flex;
-    justify-content: space-between;
-  }
+#form-container {
+  display: flex;
+  justify-content: space-between;
+}
 
-  #form-header {
-    text-align: initial;
-    width: 40%;
-  }
+#form-header {
+  text-align: initial;
+  width: 40%;
+}
 
-  form {
-    width: 55%;
-    max-width: 100%;
-    margin: 0;
-  }
-  
-  #get-in-touch-btn {
-    align-self: start;
-  }
+form {
+  width: 55%;
+  max-width: 100%;
+  margin: 0;
+}
 
-  #divider {
-    display: none;
-  }
+#get-in-touch-btn {
+  align-self: start;
+}
+
+#divider {
+  display: none;
+}
