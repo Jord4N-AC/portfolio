@@ -14,6 +14,7 @@
   from {
     text-shadow: 0 0 15px #fff;
   }
+
   to {
     letter-spacing: 10px;
     text-shadow: 0 0 15px #f55800;
@@ -22,6 +23,7 @@
 }
 
 .card1 img {
+  margin: 0;
   transition: all 0.3s;
 }
 
@@ -29,6 +31,7 @@
   position: relative;
   transform: scale(1.1);
 }
+
 /* ------------------------ */
 
 #menu-desktop {
@@ -79,10 +82,6 @@
 #main-card {
   display: flex;
   align-items: flex-start;
-}
-
-.card1 img {
-  margin: 0;
 }
 
 .card1 .content {
