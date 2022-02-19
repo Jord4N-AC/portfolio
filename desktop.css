@@ -19,6 +19,12 @@
   }
 }
 
+.card1:hover img {
+  transition: all 0.3s;
+  position: relative;
+  transform: scale(1.2);
+}
+
 #menu-desktop {
   display: flex;
 }
