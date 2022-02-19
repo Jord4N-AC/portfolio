@@ -6,24 +6,30 @@
 /* Animations and transition */
 .logo {
   position: relative;
-  animation: logo 3s;
+  animation: logo 3s ease-out 1s;
+  transition: all 0.2s;
 }
 
 @keyframes logo {
-  from {}
+  from {
+    text-shadow: 0 0 15px #fff;
+  }
   to {
     letter-spacing: 10px;
-    text-shadow: 0 0 12px #f55800;
-    transform: translateX(20px);
+    text-shadow: 0 0 15px #f55800;
     transform: scale(1.5);
   }
 }
 
-.card1:hover img {
+.card1 img {
   transition: all 0.3s;
-  position: relative;
-  transform: scale(1.2);
 }
+
+.card1:hover img {
+  position: relative;
+  transform: scale(1.1);
+}
+/* ------------------------ */
 
 #menu-desktop {
   display: flex;
