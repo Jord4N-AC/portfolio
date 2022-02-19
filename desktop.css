@@ -1,5 +1,22 @@
+
 #bar-container {
   padding: 2% 8%;
+}
+
+/* Animations and transition */
+.logo {
+  position: relative;
+  animation: logo 3s;
+}
+
+@keyframes logo {
+  from {}
+  to {
+    letter-spacing: 10px;
+    text-shadow: 0 0 12px #f55800;
+    transform: translateX(20px);
+    transform: scale(1.5);
+  }
 }
 
 #menu-desktop {
