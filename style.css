@@ -103,6 +103,42 @@ a {
 }
 
 /* Mobile Menu */
+#menu-mobile {
+  background-color: #3c3a39f8;
+  height: 90vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10%;
+}
+
+#links-container {
+  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+#closebtn {
+  color: #67798E;
+  font-size: 42px;
+  align-self: flex-end;
+  padding: 8%;
+}
+
+.menu-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFF5E1;
+  border-bottom: 1px solid #6F6C6B;
+  margin-right: 42px;
+  margin-bottom: 4%;
+}
 
 /* Introduction */
 #main-section {
