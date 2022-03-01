@@ -18,10 +18,19 @@ function disapear() {
   body.style.overflow = 'initial';
 }
 
+function disapearEcsAndResize(event) {
+  if(
+    (window.innerWidth > 991) || 
+    (event.key === 'Escape')) {
+    disapear();
+  }
+}
+
+
 menuIcon.addEventListener('click', display);
 closeIcon.addEventListener('click', disapear);
+body.addEventListener('keyup', disapearEcsAndResize);
 menuLinks.forEach(link => {
   link.addEventListener('click', disapear);
 });
-
-console.log(menuIcon);
+window.addEventListener('resize', disapearEcsAndResize);

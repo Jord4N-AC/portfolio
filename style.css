@@ -113,7 +113,6 @@ a {
   height: 90vh;
   width: 0%;
   position: fixed;
-  -index: 1;
   top: 0;
   left: 0;
   display: flex;
@@ -121,7 +120,7 @@ a {
   padding: 5% 10vw;
   overflow-x: hidden;
   transform: translateX(-100%);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-out;
 }
 
 #links-container {
