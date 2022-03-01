@@ -52,6 +52,10 @@ For deployment please rich out to the owner of this project
 - GitHub: [Ibnballo1](https://github.com/Ibnballo1)
 - LinkedIn: [Abdullateef Bello](https://www.linkedin.com/in/camilo-armijos-2b9648197)
 
+👤 Kemigabo Catherine
+- GitHub: [kemigabocatherine](https://github.com/kemigabocatherine)
+- Twitter: @twitterhandle
+
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
