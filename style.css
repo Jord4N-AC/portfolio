@@ -105,18 +105,19 @@ a {
 /* Mobile Menu */
 #menu-mobile {
   background-color: #3c3a39f8;
+  box-sizing: border-box;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
-  padding-right: 10%;
+  padding: 5% 10vw;
+  border: 4px solid red;
 }
 
 #links-container {
-  padding-left: 8%;
   display: flex;
   flex-direction: column;
 }
@@ -124,20 +125,19 @@ a {
 #closebtn {
   color: #67798E;
   font-size: 42px;
+  font-weight: bold;
   align-self: flex-end;
-  padding: 8%;
+  padding: 10px;
 }
 
-.menu-link {
-  font-family: Inter;
+.menu-link-mb {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  color: #FFF5E1;
   border-bottom: 1px solid #6F6C6B;
-  margin-right: 42px;
-  margin-bottom: 4%;
+  padding: 10px 20px;
+  margin: 0 0 3% 0;
 }
 
 /* Introduction */
