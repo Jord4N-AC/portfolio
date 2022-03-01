@@ -129,7 +129,7 @@ a {
 }
 
 #closebtn {
-  color: #67798E;
+  color: #67798e;
   font-size: 42px;
   font-weight: bold;
   align-self: flex-end;
@@ -151,7 +151,7 @@ a {
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   padding: 10px 20px;
   margin: 0 0 3% 0;
 }

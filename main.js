@@ -5,7 +5,6 @@ const mobileMenu = document.querySelector('#menu-mobile');
 const closeIcon = document.querySelector('#closebtn');
 const menuLinks = document.querySelectorAll('.menu-link-mb');
 
-
 function display() {
   mobileMenu.style.width = '100%';
   mobileMenu.style.transform = 'translate(0%)';
@@ -19,18 +18,17 @@ function disapear() {
 }
 
 function disapearEcsAndResize(event) {
-  if(
-    (window.innerWidth > 991) || 
-    (event.key === 'Escape')) {
+  if (
+    (window.innerWidth > 991)
+    || (event.key === 'Escape')) {
     disapear();
   }
 }
 
-
 menuIcon.addEventListener('click', display);
 closeIcon.addEventListener('click', disapear);
 body.addEventListener('keyup', disapearEcsAndResize);
-menuLinks.forEach(link => {
+menuLinks.forEach((link) => {
   link.addEventListener('click', disapear);
 });
 window.addEventListener('resize', disapearEcsAndResize);
