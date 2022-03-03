@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0;
-  height: 150vh;
 }
 
 #bar-container {
@@ -21,18 +20,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.time {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: -0.28px;
-  width: 54px;
-  height: 16px;
 }
 
 .fas-container .fas {
@@ -128,7 +115,7 @@ a {
   flex-direction: column;
 }
 
-#closebtn {
+.closebtn {
   color: #67798e;
   font-size: 42px;
   font-weight: bold;
@@ -137,13 +124,14 @@ a {
   transition: all 0.4s;
 }
 
-#closebtn:hover {
+.closebtn:hover {
   transform: scale(1.4);
   color: #0df1f1;
 }
 
-#closebtn:active {
-  transform: scale(1);
+.closebtn:active {
+  transform: scale(1.2);
+  color: #67798e;
 }
 
 .menu-link-mb {
@@ -232,6 +220,7 @@ a {
   max-width: 600px;
   min-width: 100px;
   width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -390,6 +379,7 @@ a {
 .card5 { grid-area: card5; }
 .card6 { grid-area: card6; }
 .card7 { grid-area: card7; }
+
 
 /* About Section */
 
@@ -598,13 +588,5 @@ form textarea::placeholder {
       'card2 card3'
       'card4 card5'
       'card6 card7';
-  }
-}
-
-@media (min-width: 870px) {
-  .crd1,
-  .card {
-    display: flex;
-    flex-direction: column;
   }
 }

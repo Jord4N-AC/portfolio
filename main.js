@@ -2,7 +2,7 @@
 const body = document.querySelector('body');
 const menuIcon = document.querySelector('.fa-bars');
 const mobileMenu = document.querySelector('#menu-mobile');
-const closeIcon = document.querySelector('#closebtn');
+const closeIcon = document.querySelector('.closebtn');
 const menuLinks = document.querySelectorAll('.menu-link-mb');
 
 function display() {
@@ -82,7 +82,7 @@ function createCard() {
             <h2>My Recent Works</h2>
             <div id="header-line"></div>
         </header>
-  `;  
+  `;
 
   for(let i = 7; i >= 1; i -= 1) {
     if(i === 1) {
@@ -100,7 +100,7 @@ function createCard() {
                     <li class="tag">${cardsContent.tags.cards[2]}</li>
                     <li class="tag">${cardsContent.tags.cards[3]}</li>
                 </ul>
-                <a class="btn see-project-btn main-btn" href="#">
+                <a class="btn see-project-btn main-btn" href="#main-card">
                     ${cardsContent.buttons[0]}
                 </a>
             </div>
@@ -109,9 +109,9 @@ function createCard() {
       worksSection.insertAdjacentHTML('afterbegin', card);
       break;
     } 
-    
+
     const card = `
-    <div class="card${i} card">
+    <div id="c${i}" class="card${i} card">
         <div class="content">
             <h3>${cardsContent.header.mobile[1]}</h3>
             <p class="p-format">
@@ -123,7 +123,7 @@ function createCard() {
                 <li class="tag">${cardsContent.tags.cards[2]}</li>
             </ul>
         </div>
-        <a class="btn btn-2 see-project-btn" href="#">
+        <a class="btn btn-2 see-project-btn" href="#c${i}">
             ${cardsContent.buttons[0]}
         </a>
     </div>
@@ -135,3 +135,24 @@ function createCard() {
 }
 
 createCard();
+
+// Modal
+const buttons = document.querySelectorAll('.see-project-btn');
+
+// function showModalWindow(ind) {
+//   const cards = document.querySelectorAll('#main-card, .card');
+//   const modalWindow = `
+//         <div id="modal-container">
+//         </div>
+//   `;
+ 
+//   console.log(cards[ind]);
+
+//   cards[ind].insertAdjacentHTML('afterbegin', modalWindow);
+// }
+
+// buttons.forEach((btn, ind) => {
+//   btn.addEventListener('click', () => {
+//     showModalWindow(ind);
+//   });
+// });
