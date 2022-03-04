@@ -44,70 +44,125 @@ const cardsContent = {
   images: {
     m_d_popup: [
       [
+        // Content in some array follows this order 
+        // [mobile, mobilePopup, desktop, desktopPopup]
+        //               ('') empty values mean there no content for that Part
+        'images/cards/card1.svg', 'images/cards/card_1_popup.svg',
         'images/cards/card1.svg', 'images/cards/card_1_popup.svg'
       ],
       [
-        'images/cards/card2-7_mob_2&5_desk_dark.svg',
-        'images/cards/card_2&5_desktop_light.svg'
+        '','images/cards/card_2&5_desktop_light.svg',
+        '', 'images/cards/card_2&5_desktop_light.svg'
       ],
       [
-        'images/cards/card2-7_mob_2&5_desk_dark.svg',
-        'images/cards/card_3&6_desktop_light.svg'
+        '', 'images/cards/card_3&6_desktop_light.svg',
+        '', 'images/cards/card_3&6_desktop_light.svg'
       ],
       [
-        'images/cards/card2-7_mob_2&5_desk_dark.svg',
-        'images/cards/card_4&7_desktop_light.svg'
+        '', 'images/cards/card_4&7_desktop_light.svg',
+        '', 'images/cards/card_4&7_desktop_light.svg'
       ],
       [
-        'images/cards/card2-7_mob_2&5_desk_dark.svg',
-        'images/cards/card_2&5_desktop_light.svg'
+        '', 'images/cards/card_2&5_desktop_light.svg',
+        '', 'images/cards/card_2&5_desktop_light.svg'
       ],
       [
-        'images/cards/card2-7_mob_2&5_desk_dark.svg',
-        'images/cards/card_3&6_desktop_light.svg'
+        '', 'images/cards/card_3&6_desktop_light.svg',
+        '', 'images/cards/card_3&6_desktop_light.svg'
       ],
       [
-        'images/cards/card2-7_mob_2&5_desk_dark.svg',
-        'images/cards/card_4&7_desktop_light.svg'
+        '', 'images/cards/card_4&7_desktop_light.svg',
+        '', 'images/cards/card_4&7_desktop_light.svg'
       ]
     ]
   },
   header: {
     m_d_popup: [
+      // [mobile, mobilePopup, desktop, desktopPopup]
       [
-        'Multi-Post Stories',
-        'Multi Post Stories',
-        'Keeping track of hundreds  of components website'
+        'Multi-Post Stories', 'Multi Post Stories',
+        'Multi-Post Stories', 'Keeping track of hundreds  of components website'
       ],
-      ['Profesional Art Printing Data', 'Profesional Art Printing Data More'],
-      ['Profesional Art Printing Data', 'Data Dashboard Healthcare'],
-      ['Profesional Art Printing Data', 'Website Protfolio'],
-      ['Profesional Art Printing Data', 'Profesional Art Printing Data More'],
-      ['Profesional Art Printing Data', 'Data Dashboard Healthcare'],
-      ['Profesional Art Printing Data', 'Website Protfolio']
+      [
+        'Profesional Art Printing Data', 'Profesional Art Printing Data',
+        'Profesional Art Printing Data More', 'Profesional Art Printing Data More'
+      ],
+      [
+        'Profesional Art Printing Data', 'Profesional Art Printing Data',
+        'Data Dashboard Healthcare', 'Data Dashboard Healthcare'
+      ],
+      [
+        'Profesional Art Printing Data', 'Profesional Art Printing Data',
+        'Website Protfolio', 'Website Protfolio'
+      ],
+      [
+        'Profesional Art Printing Data', 'Profesional Art Printing Data',
+        'Profesional Art Printing Data More', 'Profesional Art Printing Data More'
+      ],
+      [
+        'Profesional Art Printing Data', 'Profesional Art Printing Data',
+        'Data Dashboard Healthcare', 'Data Dashboard Healthcare'
+      ],
+      [
+        'Profesional Art Printing Data', 'Profesional Art Printing Data',
+        'Website Protfolio', 'Website Protfolio'
+      ]
     ]
   }, 
   paragraph: {
     m_d_popup: [
+      // [mobile, mobilePopup, desktop, desktopPopup]
       [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
         'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
       ],
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard'
+      [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      ],
+      [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      ],
+      [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      ],
+      [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      ],
+      [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      ],
+      [
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      ]
     ]
   },
   tags: {
     m_d_popup: [
+      // [mobile, mobilePopup, desktop, desktopPopup]
       [
-        ['css', 'html', 'bootstrap', 'Ruby'],
-        ['html', 'bootstrap', 'Ruby on rails']
-      ],      
+        ['css', 'html', 'bootstrap', 'Ruby'], ['html', 'bootstrap', 'Ruby on rails'],
+        ['css', 'html', 'bootstrap', 'Ruby'], ['html', 'bootstrap', 'Ruby on rails']
+      ],
       ['html', 'bootstrap', 'Ruby'],
       ['html', 'bootstrap', 'Ruby'],
       ['html', 'bootstrap', 'Ruby'],
@@ -130,11 +185,22 @@ const cardsContent = {
   }
 };
 
+// Const with the path of each element in the Object
+const image = cardsContent.images.m_d_popup;
+const header = cardsContent.header.m_d_popup;
+const paragraph = cardsContent.paragraph.m_d_popup;
+const tag = cardsContent.tags.m_d_popup;
+const button = cardsContent.buttons.m_d_popup;
 
+// [mobile, mobilePopup, desktop, desktopPopup]
+const mobile = 0;
+const mobilePopup = 1;
+const desktop = 2;
+const desktopPopup = 3;
 
 function createCard() {
   const worksSection = document.querySelector('#works-section');
-  const header = `
+  const headerSection = `
         <header id="works-header">
             <h2>My Recent Works</h2>
             <div id="header-line"></div>
@@ -145,20 +211,20 @@ function createCard() {
     if(i === 1) {
       const card = `
         <div id="main-card" class="card${i}">
-            <img src="${cardsContent.images.m_d_popup[i - 1][0]}" alt="project${i} screenshot">
+            <img src="${image[i - 1][mobile]}" alt="project${i} screenshot">
             <div class="content">
-                <h3>${cardsContent.header.m_d_popup[i - 1][0]}</h3>
+                <h3>${header[i - 1][mobile]}</h3>
                 <p class="p-format card${i}-p">
-                    ${cardsContent.paragraph.m_d_popup[i - 1][0]}
+                    ${paragraph[i - 1][mobile]}
                 </p>
                 <ul class="tag-group">
-                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][0]}</li>
-                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][1]}</li>
-                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][2]}</li>
-                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][3]}</li>
+                    <li class="tag">${tag[i - 1][mobile][0]}</li>
+                    <li class="tag">${tag[i - 1][mobile][1]}</li>
+                    <li class="tag">${tag[i - 1][mobile][2]}</li>
+                    <li class="tag">${tag[i - 1][mobile][3]}</li>
                 </ul>
                 <a class="btn see-project-btn main-btn" href="#modal-window">
-                    ${cardsContent.buttons.m_d_popup.text[0]}
+                    ${button.text[0]}
                 </a>
             </div>
         </div>
@@ -170,25 +236,25 @@ function createCard() {
     const card = `
     <div id="c${i}" class="card${i} card">
         <div class="content">
-            <h3>${cardsContent.header.m_d_popup[i - 1][0]}</h3>
+            <h3>${header[i - 1][mobile]}</h3>
             <p class="p-format">
-                ${cardsContent.paragraph.m_d_popup[i - 1]}
+                ${paragraph[i - 1][mobile]}
             </p>
             <ul class="tag-group">
-                <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0]}</li>
-                <li class="tag">${cardsContent.tags.m_d_popup[i - 1][1]}</li>
-                <li class="tag">${cardsContent.tags.m_d_popup[i - 1][2]}</li>
+                <li class="tag">${tag[i - 1][0]}</li>
+                <li class="tag">${tag[i - 1][1]}</li>
+                <li class="tag">${tag[i - 1][2]}</li>
             </ul>
         </div>
         <a class="btn btn-2 see-project-btn" href="#modal-window">
-            ${cardsContent.buttons.m_d_popup.text[0]}
+            ${button.text[0]}
         </a>
     </div>
     `;
     worksSection.insertAdjacentHTML('afterbegin', card);
   }
 
-  worksSection.insertAdjacentHTML('afterbegin', header);
+  worksSection.insertAdjacentHTML('afterbegin', headerSection);
 }
 createCard();
 
@@ -271,5 +337,15 @@ buttons.forEach((btn, ind) => {
     showModalWindow(ind);
   });
 });
+
+let a; //3
+function updateText() {
+  if(window.innerWidth > 991) {
+    a = 1;
+  } else {
+    a = 0;
+  }
+}
+window.addEventListener('resize', updateText);
 
 
