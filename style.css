@@ -115,7 +115,7 @@ a {
   flex-direction: column;
 }
 
-.closebtn {
+.close-btn {
   color: #67798e;
   font-size: 42px;
   font-weight: bold;
@@ -124,12 +124,12 @@ a {
   transition: all 0.4s;
 }
 
-.closebtn:hover {
+.close-btn:hover {
   transform: scale(1.4);
   color: #0df1f1;
 }
 
-.closebtn:active {
+.close-btn:active {
   transform: scale(1.2);
   color: #67798e;
 }
@@ -385,7 +385,6 @@ a {
   /* display: none; */
   position: fixed;
   z-index: 1;
-  /* padding-top: 100px; */
   left: 0;
   top: 0;
   width: 100%;
@@ -405,8 +404,22 @@ a {
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 234, 255, 0.2),0 6px 20px 0 rgba(1, 217, 255, 0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-name: animatePopup;
+  animation-duration: 0.6s
+}
+
+/* Modal Animation */
+@keyframes animatePopup {
+  from {
+    width:30%;
+    height: 5%;
+    opacity:0;
+  }
+  to {
+    width: 80%;
+    height: initial;
+    opacity:1;
+  }
 }
 
 #hearder-container {
