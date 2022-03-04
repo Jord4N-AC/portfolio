@@ -266,14 +266,13 @@ createCard();
 const buttons = document.querySelectorAll('.see-project-btn');
 
 function showModalWindow(ind) {
-  const cards = document.querySelectorAll('#main-card, .card');
-  
+  const cards = document.querySelectorAll('#main-card, .card');  
   
   const modalHtmlContent = `
         <div class="modal-container">
             <div id="modal" class="card1 modal-window">
                 <div class="hearder-container">
-                    <div class="modal-header">
+                    <div class="modal-header">                    
                         <h3>${header[ind][mobilePopup]}</h3>
                         <a class="close-btn close-modal-btn" href="#modal-${ind + 1}">&times;</a>
                     </div>
@@ -285,7 +284,7 @@ function showModalWindow(ind) {
                 </div>
                 <div class="modal-content" class="content">
                     <img id="modal-img" src="${image[ind][mobilePopup]}" alt="project${ind + 1} screenshot">
-                    <div class="modal-description">
+                    <div class="modal-description">                    
                         <p id="modal-p" class="p-format">
                           ${paragraph[ind][mobilePopup]}
                         </p>
@@ -295,8 +294,8 @@ function showModalWindow(ind) {
                                 <img src="${button.icon[0]}" alt="${button.text[1]} Icon">
                             </a>
                             <a class="btn modal-btn main-btn modal-btn-2" href="${button.links[0]}">
-                            ${button.text[1]}
-                                <img src="${button.icon[0]}" alt="${button.text[1]} Icon">
+                            ${button.text[2]}
+                                <img src="${button.icon[1]}" alt="${button.text[2]} Icon">
                             </a>
                         </div>
                     </div>
@@ -308,6 +307,10 @@ function showModalWindow(ind) {
         cards[ind].insertAdjacentHTML('afterbegin', modalHtmlContent);
         body.style.overflow = 'hidden';
         
+        // For changing content
+        modalHeaders = document.querySelector('.modal-header h3');
+        modalParagraphs = document.querySelector('#modal-p');
+
         const modalWindow = document.querySelector('.modal-container');
         const closeModaIcon = document.querySelector('.close-modal-btn');
 
@@ -333,20 +336,48 @@ function showModalWindow(ind) {
             
 }
 
+
 buttons.forEach((btn, ind) => {
   btn.addEventListener('click', () => {
+    popupInd = ind;
     showModalWindow(ind);
+    
+    if(window.innerWidth > 991) {  
+      modalHeaders.innerHTML = header[ind][desktopPopup];
+      modalParagraphs.innerHTML = paragraph[ind][desktopPopup];  
+    } else {      
+      modalHeaders.innerHTML = header[ind][mobilePopup];
+      modalParagraphs.innerHTML = paragraph[ind][mobilePopup];
+    }
+
   });
 });
 
-let a; //3
+
+
+// Change Content When Resize, Changing content
+const cardHeaders = document.querySelectorAll('.card h3');
+let modalHeaders;
+let modalParagraphs;
+let popupInd;
+
 function updateText() {
   if(window.innerWidth > 991) {
-    a = 1;
+    cardHeaders.forEach((c, ind) => {
+      c.innerHTML = header[ind + 1][desktop];
+    });
+
+    modalHeaders.innerHTML = header[popupInd][desktopPopup];
+    modalParagraphs.innerHTML = paragraph[popupInd][desktopPopup];
+
   } else {
-    a = 0;
+    cardHeaders.forEach((c, ind) => {
+      c.innerHTML = header[ind + 1][mobile];
+    });
+    
+    modalHeaders.innerHTML = header[popupInd][mobilePopup];
+    modalParagraphs.innerHTML = paragraph[popupInd][mobilePopup];
   }
 }
+
 window.addEventListener('resize', updateText);
-
-
