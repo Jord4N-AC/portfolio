@@ -122,6 +122,9 @@ const cardsContent = {
       icon: [
         'images/Icons/see_live_icon.svg',
         'images/Icons/see_source_icon.svg'
+      ],
+      links: [
+        'https://github.com/Jord4N-AC/portfolio'
       ]
     }
   }
@@ -145,7 +148,7 @@ function createCard() {
             <img src="${cardsContent.images.m_d_popup[i - 1][0]}" alt="project${i} screenshot">
             <div class="content">
                 <h3>${cardsContent.header.m_d_popup[i - 1][0]}</h3>
-                <p id="card${i}-p" class="p-format">
+                <p class="p-format card${i}-p">
                     ${cardsContent.paragraph.m_d_popup[i - 1][0]}
                 </p>
                 <ul class="tag-group">
@@ -189,5 +192,84 @@ function createCard() {
 }
 createCard();
 
+
+
+// PopUp Window
+
+const buttons = document.querySelectorAll('.see-project-btn');
+
+function showModalWindow(ind) {
+  const cards = document.querySelectorAll('#main-card, .card');
+  
+  
+  const modalHtmlContent = `
+        <div class="modal-container">
+            <div id="modal" class="card1 modal-window">
+                <div class="hearder-container">
+                    <div class="modal-header">
+                        <h3>${cardsContent.header.m_d_popup[ind][0]}</h3>
+                        <a class="close-btn close-modal-btn" href="#modal-${ind + 1}">&times;</a>
+                    </div>
+                    <ul class="tag-group">
+                        <li class="tag">${cardsContent.tags.m_d_popup[0][1][0]}</li>
+                        <li class="tag">${cardsContent.tags.m_d_popup[0][1][1]}</li>
+                        <li class="tag">${cardsContent.tags.m_d_popup[0][1][2]}</li>
+                    </ul>
+                </div>
+                <div class="modal-content" class="content">
+                    <img id="modal-img" src="${cardsContent.images.m_d_popup[ind][1]}" alt="project${ind + 1} screenshot">
+                    <div class="modal-description">
+                        <p id="modal-p" class="p-format">
+                          ${cardsContent.paragraph.m_d_popup[0][1]}
+                        </p>
+                        <div class="modal-btn-container">
+                            <a class="btn modal-btn main-btn modal-btn-1" href="${cardsContent.buttons.m_d_popup.links[0]}">
+                            ${cardsContent.buttons.m_d_popup.text[1]}
+                                <img src="${cardsContent.buttons.m_d_popup.icon[0]}" alt="${cardsContent.buttons.m_d_popup.text[1]} Icon">
+                            </a>
+                            <a class="btn modal-btn main-btn modal-btn-2" href="${cardsContent.buttons.m_d_popup.links[0]}">
+                            ${cardsContent.buttons.m_d_popup.text[1]}
+                                <img src="${cardsContent.buttons.m_d_popup.icon[0]}" alt="${cardsContent.buttons.m_d_popup.text[1]} Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>`;
+
+        
+        cards[ind].insertAdjacentHTML('afterbegin', modalHtmlContent);
+        body.style.overflow = 'hidden';
+        
+        const modalWindow = document.querySelector('.modal-container');
+        const closeModaIcon = document.querySelector('.close-modal-btn');
+
+        closeModaIcon.addEventListener('click', () => {
+              modalWindow.remove();
+              body.style.overflow = 'initial';
+            });
+
+            body.addEventListener('keydown', (event) => {
+              if(event.key === 'Escape') {
+                modalWindow.remove();
+                body.style.overflow = 'initial';
+              }
+            });
+            
+            window.addEventListener('click', (event) => {
+              if(event.target == modalWindow) {
+                modalWindow.remove();
+                body.style.overflow = 'initial';
+              }
+            });
+
+            
+}
+
+buttons.forEach((btn, ind) => {
+  btn.addEventListener('click', () => {
+    showModalWindow(ind);
+  });
+});
 
 

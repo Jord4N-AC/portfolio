@@ -272,7 +272,10 @@ a {
 
 .card1 h3,
 .card1 p,
-.card1 .tag-group {
+.card1 .tag-group,
+#modal h3,
+#modal p,
+#modal .tag {
   color: #091e42;
 }
 
@@ -285,7 +288,8 @@ a {
   margin: 22px 0;
 }
 
-.content p {
+.content p,
+.modal-container p {
   font-family: 'Inter', sans-serif;
   margin: 0;
 }
@@ -381,7 +385,7 @@ a {
 .card7 { grid-area: card7; }
 
 /* Modal Window */
-#modal-container {
+.modal-container {
   /* display: none; */
   position: fixed;
   z-index: 1;
@@ -394,7 +398,7 @@ a {
   background-color: rgba(0,0,0,0.4);
 }
 
-#modal-window {
+.modal-window {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -422,17 +426,17 @@ a {
   }
 }
 
-#hearder-container {
+.hearder-container {
   display: flex;  
   flex-direction: column;
 }
 
-#modal-header {
+.modal-header {
   display: flex;
   justify-content: space-between;
 }
 
-#modal-header h3 {
+.modal-header h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -441,12 +445,12 @@ a {
   margin-top: 15px;
 }
 
-#close-modal-btn {
+.close-modal-btn {
   align-self: flex-start;
   padding: 0;
 }
 
-#modal-content {
+.modal-content {
   display: flex;
   flex-direction: column;
 }
@@ -459,7 +463,7 @@ a {
   margin: 20px 0;
 }
 
-#modal-btn-container {
+.modal-btn-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -469,7 +473,7 @@ a {
   align-items: center;
 }
 
-#modal-btn-1 {
+.modal-btn-1 {
   margin-right: 5%;
 }
 

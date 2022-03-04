@@ -158,13 +158,13 @@
 }
 
 /* Modal Window */
-#modal-header h3 {
+.modal-header h3 {
   font-family: 'Crete Round', serif;
   font-weight: normal;
   margin-bottom: 0;
 }
 
-#modal-content {
+.modal-content {
   width: auto;
   flex-direction: initial;
   margin-left: 0;
@@ -176,7 +176,7 @@
   max-width: 60%;
 }
 
-#modal-description {
+.modal-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
