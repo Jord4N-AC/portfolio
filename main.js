@@ -42,47 +42,53 @@ menuLinks.forEach((link) => {
 
 const cardsContent = {
   images: {
-    mobile_popup: [
-      'images/cards/card1.svg',
-      'images/cards/card2-7_mob_2&5_desk_dark.svg',
-      'images/cards/card2-7_mob_2&5_desk_dark.svg',
-      'images/cards/card2-7_mob_2&5_desk_dark.svg',
-      'images/cards/card2-7_mob_2&5_desk_dark.svg',
-      'images/cards/card2-7_mob_2&5_desk_dark.svg',
-      'images/cards/card2-7_mob_2&5_desk_dark.svg'
-    ],
-    desktop_popup: [
-      ['images/cards/card1.svg', 'images/cards/card_1_popup.svg'],
-      'images/cards/card_2&5_desktop_light.svg',
-      'images/cards/card_3&6_desktop_light.svg',
-      'images/cards/card_4&7_desktop_light.svg',
-      'images/cards/card_2&5_desktop_light.svg',
-      'images/cards/card_3&6_desktop_light.svg',
-      'images/cards/card_4&7_desktop_light.svg'
+    m_d_popup: [
+      [
+        'images/cards/card1.svg', 'images/cards/card_1_popup.svg'
+      ],
+      [
+        'images/cards/card2-7_mob_2&5_desk_dark.svg',
+        'images/cards/card_2&5_desktop_light.svg'
+      ],
+      [
+        'images/cards/card2-7_mob_2&5_desk_dark.svg',
+        'images/cards/card_3&6_desktop_light.svg'
+      ],
+      [
+        'images/cards/card2-7_mob_2&5_desk_dark.svg',
+        'images/cards/card_4&7_desktop_light.svg'
+      ],
+      [
+        'images/cards/card2-7_mob_2&5_desk_dark.svg',
+        'images/cards/card_2&5_desktop_light.svg'
+      ],
+      [
+        'images/cards/card2-7_mob_2&5_desk_dark.svg',
+        'images/cards/card_3&6_desktop_light.svg'
+      ],
+      [
+        'images/cards/card2-7_mob_2&5_desk_dark.svg',
+        'images/cards/card_4&7_desktop_light.svg'
+      ]
     ]
   },
   header: {
-    mobile_popup: [
-      ['Multi-Post Stories', 'Multi Post Stories'],
-      'Profesional Art Printing Data',
-      'Profesional Art Printing Data',
-      'Profesional Art Printing Data',
-      'Profesional Art Printing Data',
-      'Profesional Art Printing Data',
-      'Profesional Art Printing Data'
-    ],
-    desktop_popup: [
-      ['Multi-Post Stories', 'Keeping track of hundreds  of components website'],
-      'Profesional Art Printing Data More',
-      'Data Dashboard Healthcare',
-      'Website Protfolio',
-      'Profesional Art Printing Data More',
-      'Data Dashboard Healthcare',
-      'Website Protfolio'
+    m_d_popup: [
+      [
+        'Multi-Post Stories',
+        'Multi Post Stories',
+        'Keeping track of hundreds  of components website'
+      ],
+      ['Profesional Art Printing Data', 'Profesional Art Printing Data More'],
+      ['Profesional Art Printing Data', 'Data Dashboard Healthcare'],
+      ['Profesional Art Printing Data', 'Website Protfolio'],
+      ['Profesional Art Printing Data', 'Profesional Art Printing Data More'],
+      ['Profesional Art Printing Data', 'Data Dashboard Healthcare'],
+      ['Profesional Art Printing Data', 'Website Protfolio']
     ]
   }, 
   paragraph: {
-    mobile_desktop_popup: [
+    m_d_popup: [
       [
         'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -97,11 +103,11 @@ const cardsContent = {
     ]
   },
   tags: {
-    mobile_desktop_popup: [
+    m_d_popup: [
       [
         ['css', 'html', 'bootstrap', 'Ruby'],
         ['html', 'bootstrap', 'Ruby on rails']
-      ],
+      ],      
       ['html', 'bootstrap', 'Ruby'],
       ['html', 'bootstrap', 'Ruby'],
       ['html', 'bootstrap', 'Ruby'],
@@ -111,7 +117,7 @@ const cardsContent = {
     ]
   },
   buttons: {
-    mobile_desktop_popup: {
+    m_d_popup: {
       text: ['See Project', 'See Live', 'See Source'],
       icon: [
         'images/Icons/see_live_icon.svg',
@@ -136,20 +142,20 @@ function createCard() {
     if(i === 1) {
       const card = `
         <div id="main-card" class="card${i}">
-            <img src="${cardsContent.images.mobile_popup[i - 1]}" alt="project${i} screenshot">
+            <img src="${cardsContent.images.m_d_popup[i - 1][0]}" alt="project${i} screenshot">
             <div class="content">
-                <h3>${cardsContent.header.mobile_popup[i - 1][0]}</h3>
+                <h3>${cardsContent.header.m_d_popup[i - 1][0]}</h3>
                 <p id="card${i}-p" class="p-format">
-                    ${cardsContent.paragraph.mobile_desktop_popup[i - 1][0]}
+                    ${cardsContent.paragraph.m_d_popup[i - 1][0]}
                 </p>
                 <ul class="tag-group">
-                    <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][0][0]}</li>
-                    <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][0][1]}</li>
-                    <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][0][2]}</li>
-                    <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][0][3]}</li>
+                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][0]}</li>
+                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][1]}</li>
+                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][2]}</li>
+                    <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0][3]}</li>
                 </ul>
                 <a class="btn see-project-btn main-btn" href="#modal-window">
-                    ${cardsContent.buttons.mobile_desktop_popup.text[0]}
+                    ${cardsContent.buttons.m_d_popup.text[0]}
                 </a>
             </div>
         </div>
@@ -161,18 +167,18 @@ function createCard() {
     const card = `
     <div id="c${i}" class="card${i} card">
         <div class="content">
-            <h3>${cardsContent.header.mobile_popup[i - 1]}</h3>
+            <h3>${cardsContent.header.m_d_popup[i - 1][0]}</h3>
             <p class="p-format">
-                ${cardsContent.paragraph.mobile_desktop_popup[i - 1]}
+                ${cardsContent.paragraph.m_d_popup[i - 1]}
             </p>
             <ul class="tag-group">
-                <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][0]}</li>
-                <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][1]}</li>
-                <li class="tag">${cardsContent.tags.mobile_desktop_popup[i - 1][2]}</li>
+                <li class="tag">${cardsContent.tags.m_d_popup[i - 1][0]}</li>
+                <li class="tag">${cardsContent.tags.m_d_popup[i - 1][1]}</li>
+                <li class="tag">${cardsContent.tags.m_d_popup[i - 1][2]}</li>
             </ul>
         </div>
         <a class="btn btn-2 see-project-btn" href="#modal-window">
-            ${cardsContent.buttons.mobile_desktop_popup.text[0]}
+            ${cardsContent.buttons.m_d_popup.text[0]}
         </a>
     </div>
     `;
