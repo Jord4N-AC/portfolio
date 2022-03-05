@@ -590,7 +590,8 @@ a {
   transform: scale(1.4);
 }
 
-.skills {
+.skills,
+small {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   text-align: center;
@@ -662,6 +663,24 @@ form textarea {
 
 form textarea::placeholder {
   color: #3c3a39;
+}
+
+/* Contact Form */
+form small {
+  font-weight: bold;
+  display: inline-block;
+  align-self: center;
+  max-width: fit-content;
+  font-size: medium;
+  background-color: #22f0b2;
+  color: rgb(223, 110, 34);
+  border: 3px solid #7a487200;
+  box-shadow: 0 0 14px #517ad3;
+  border-radius: 5px;
+  margin-top: 12px;
+  padding: 10px;
+  z-index: 2;
+  transition: all 0.45s;
 }
 
 #get-in-touch-btn {

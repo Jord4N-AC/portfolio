@@ -370,3 +370,6 @@ function updateText() {
 }
 
 window.addEventListener('resize', updateText);
+
+
+// Contact Form
