@@ -39,10 +39,9 @@ menuLinks.forEach((link) => {
 // PopUp Window
 
 const cardsContent = [
+  // ('') empty values mean there no content for that Part
   // Content in some array follows this order
   // [mobile, mobilePopup, desktop, desktopPopup]
-  // ('') empty values mean there no content for that Part
-  cardsContent[ind][header][mobile]
   {
     header: [
       'Multi-Post Stories', 'Multi Post Stories',
@@ -52,15 +51,15 @@ const cardsContent = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.'
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     ],
     image: [
       'images/cards/card1.svg', 'images/cards/card_1_popup.svg',
-      'images/cards/card1.svg', 'images/cards/card_1_popup.svg'
+      'images/cards/card1.svg', 'images/cards/card_1_popup.svg',
     ],
     technologies: [
       ['css', 'html', 'bootstrap', 'Ruby'], ['html', 'bootstrap', 'Ruby on rails'],
-      ['css', 'html', 'bootstrap', 'Ruby'], ['html', 'bootstrap', 'Ruby on rails']
+      ['css', 'html', 'bootstrap', 'Ruby'], ['html', 'bootstrap', 'Ruby on rails'],
     ],
     buttons: {
       text: ['See Project', 'See Live', 'See Source'],
@@ -71,7 +70,7 @@ const cardsContent = [
       links: [
         'https://github.com/Jord4N-AC/portfolio',
       ],
-    }
+    },
   },
   {
     header: [
@@ -82,7 +81,7 @@ const cardsContent = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',      
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     ],
     image: [
       '', 'images/cards/card_2&5_desktop_light.svg',
@@ -99,7 +98,7 @@ const cardsContent = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',      
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     ],
     image: [
       '', 'images/cards/card_3&6_desktop_light.svg',
@@ -122,7 +121,7 @@ const cardsContent = [
       '', 'images/cards/card_4&7_desktop_light.svg',
       '', 'images/cards/card_4&7_desktop_light.svg',
     ],
-    technologies: ['html', 'bootstrap', 'Ruby'],    
+    technologies: ['html', 'bootstrap', 'Ruby'],
   },
   {
     header: [
@@ -133,7 +132,7 @@ const cardsContent = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',      
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     ],
     image: [
       '', 'images/cards/card_2&5_desktop_light.svg',
@@ -150,7 +149,7 @@ const cardsContent = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',      
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     ],
     image: [
       '', 'images/cards/card_3&6_desktop_light.svg',
@@ -167,30 +166,15 @@ const cardsContent = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',      
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     ],
     image: [
       '', 'images/cards/card_4&7_desktop_light.svg',
       '', 'images/cards/card_4&7_desktop_light.svg',
     ],
     technologies: ['html', 'bootstrap', 'Ruby'],
-  }
+  },
 ];
-
-
-// cardsContent[ind][header][mobile]
-// header/description/image/technologies/buttons/text,icon,links,
-
-window.addEventListener('click', () => {
-  console.log(cardsContent.length);
-});
-
-// Const with the path of each element in the Object
-const image = cardsContent.images.m_d_popup;
-const header = cardsContent.header.m_d_popup;
-const paragraph = cardsContent.paragraph.m_d_popup;
-const tag = cardsContent.tags.m_d_popup;
-const button = cardsContent.buttons.m_d_popup;
 
 // [mobile, mobilePopup, desktop, desktopPopup]
 const mobile = 0;
@@ -209,22 +193,22 @@ function createCard() {
 
   for (let i = 7; i >= 1; i -= 1) {
     if (i === 1) {
-      const card = `
-        <div id="main-card" class="card${i}">
-            <img src="${image[i - 1][mobile]}" alt="project${i} screenshot">
+      const card = `      
+        <div id="main-card" class="card${i}">        
+            <img src="${cardsContent[i - 1].image[mobile]}" alt="project${i} screenshot">
             <div class="content">
-                <h3>${header[i - 1][mobile]}</h3>
-                <p class="p-format card${i}-p">
-                    ${paragraph[i - 1][mobile]}
+                <h3>${cardsContent[i - 1].header[mobile]}</h3>
+                <p class="p-format card${i}-p">                
+                    ${cardsContent[i - 1].description[mobile]}
                 </p>
                 <ul class="tag-group">
-                    <li class="tag">${tag[i - 1][mobile][0]}</li>
-                    <li class="tag">${tag[i - 1][mobile][1]}</li>
-                    <li class="tag">${tag[i - 1][mobile][2]}</li>
-                    <li class="tag">${tag[i - 1][mobile][3]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[mobile][0]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[mobile][1]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[mobile][2]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[mobile][3]}</li>
                 </ul>
                 <a class="btn see-project-btn main-btn" href="#modal-window">
-                    ${button.text[0]}
+                    ${cardsContent[0].buttons.text[0]}
                 </a>
             </div>
         </div>
@@ -233,21 +217,21 @@ function createCard() {
       break;
     }
 
-    const card = `
+    const card = `    
     <div id="c${i}" class="card${i} card">
         <div class="content">
-            <h3>${header[i - 1][mobile]}</h3>
+            <h3>${cardsContent[i - 1].header[mobile]}</h3>
             <p class="p-format">
-                ${paragraph[i - 1][mobile]}
+                ${cardsContent[i - 1].description[mobile]}
             </p>
             <ul class="tag-group">
-                <li class="tag">${tag[i - 1][0]}</li>
-                <li class="tag">${tag[i - 1][1]}</li>
-                <li class="tag">${tag[i - 1][2]}</li>
+                <li class="tag">${cardsContent[i - 1].technologies[0]}</li>
+                <li class="tag">${cardsContent[i - 1].technologies[1]}</li>
+                <li class="tag">${cardsContent[i - 1].technologies[2]}</li>
             </ul>
         </div>
         <a class="btn btn-2 see-project-btn" href="#modal-window">
-            ${button.text[0]}
+            ${cardsContent[0].buttons.text[0]}
         </a>
     </div>
     `;
@@ -272,30 +256,30 @@ function showModalWindow(ind) {
         <div class="modal-container">
             <div id="modal" class="card1 modal-window">
                 <div class="hearder-container">
-                    <div class="modal-header">                    
-                        <h3>${header[ind][mobilePopup]}</h3>
+                    <div class="modal-header">
+                        <h3>${cardsContent[ind].header[mobilePopup]}</h3>
                         <a class="close-btn close-modal-btn" href="#modal-${ind + 1}">&times;</a>
                     </div>
                     <ul class="tag-group">
-                        <li class="tag">${tag[0][mobilePopup][0]}</li>
-                        <li class="tag">${tag[0][mobilePopup][1]}</li>
-                        <li class="tag">${tag[0][mobilePopup][2]}</li>
+                        <li class="tag">${cardsContent[0].technologies[mobilePopup][0]}</li>
+                        <li class="tag">${cardsContent[0].technologies[mobilePopup][1]}</li>
+                        <li class="tag">${cardsContent[0].technologies[mobilePopup][2]}</li>
                     </ul>
                 </div>
-                <div class="modal-content" class="content">
-                    <img id="modal-img" src="${image[ind][mobilePopup]}" alt="project${ind + 1} screenshot">
+                <div class="modal-content" class="content">                
+                    <img id="modal-img" src="${cardsContent[ind].image[mobilePopup]}" alt="project${ind + 1} screenshot">
                     <div class="modal-description">                    
                         <p id="modal-p" class="p-format">
-                          ${paragraph[ind][mobilePopup]}
+                          ${cardsContent[ind].description[mobilePopup]}
                         </p>
-                        <div class="modal-btn-container">
-                            <a class="btn modal-btn main-btn modal-btn-1" href="${button.links[0]}">
-                            ${button.text[1]}
-                                <img src="${button.icon[0]}" alt="${button.text[1]} Icon">
+                        <div class="modal-btn-container">                        
+                            <a class="btn modal-btn main-btn modal-btn-1" href="${cardsContent[0].buttons.links[0]}">
+                            ${cardsContent[0].buttons.text[1]}
+                                <img src="${cardsContent[0].buttons.icon[0]}" alt="${cardsContent[0].buttons.text[1]} Icon">
                             </a>
-                            <a class="btn modal-btn main-btn modal-btn-2" href="${button.links[0]}">
-                            ${button.text[2]}
-                                <img src="${button.icon[1]}" alt="${button.text[2]} Icon">
+                            <a class="btn modal-btn main-btn modal-btn-2" href="${cardsContent[0].buttons.links[0]}">
+                            ${cardsContent[0].buttons.text[2]}
+                                <img src="${cardsContent[0].buttons.icon[1]}" alt="${cardsContent[0].buttons.text[2]} Icon">
                             </a>
                         </div>
                     </div>
@@ -339,11 +323,11 @@ buttons.forEach((btn, ind) => {
     showModalWindow(ind);
 
     if (window.innerWidth > 991) {
-      modalHeaders.innerHTML = header[ind][desktopPopup];
-      modalParagraphs.innerHTML = paragraph[ind][desktopPopup];
+      modalHeaders.innerHTML = cardsContent[ind].header[desktopPopup];
+      modalParagraphs.innerHTML = cardsContent[ind].description[desktopPopup];
     } else {
-      modalHeaders.innerHTML = header[ind][mobilePopup];
-      modalParagraphs.innerHTML = paragraph[ind][mobilePopup];
+      modalHeaders.innerHTML = cardsContent[ind].header[mobilePopup];
+      modalParagraphs.innerHTML = cardsContent[ind].description[mobilePopup];
     }
   });
 });
@@ -354,18 +338,18 @@ const cardHeaders = document.querySelectorAll('.card h3');
 function updateText() {
   if (window.innerWidth > 991) {
     cardHeaders.forEach((c, ind) => {
-      c.innerHTML = header[ind + 1][desktop];
+      c.innerHTML = cardsContent[ind + 1].header[desktop];
     });
 
-    modalHeaders.innerHTML = header[popupInd][desktopPopup];
-    modalParagraphs.innerHTML = paragraph[popupInd][desktopPopup];
+    modalHeaders.innerHTML = cardsContent[popupInd].header[desktopPopup];
+    modalParagraphs.innerHTML = cardsContent[popupInd].description[desktopPopup];
   } else {
     cardHeaders.forEach((c, ind) => {
-      c.innerHTML = header[ind + 1][mobile];
+      c.innerHTML = cardsContent[ind + 1].header[mobile];
     });
 
-    modalHeaders.innerHTML = header[popupInd][mobilePopup];
-    modalParagraphs.innerHTML = paragraph[popupInd][mobilePopup];
+    modalHeaders.innerHTML = cardsContent[popupInd].header[mobilePopup];
+    modalParagraphs.innerHTML = cardsContent[popupInd].description[mobilePopup];
   }
 }
 
