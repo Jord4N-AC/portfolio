@@ -666,7 +666,7 @@ form textarea::placeholder {
 }
 
 /* Contact Form */
-form small {
+form .show {
   font-weight: bold;
   display: inline-block;
   align-self: center;
