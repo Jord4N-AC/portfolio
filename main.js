@@ -46,7 +46,7 @@ const cardsContent = [
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
+    headerPopup: ['Multi Post Stories', 'Keeping track of hundreds  of components website',],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -154,6 +154,12 @@ const cardsContent = [
   },
 ];
 
+function a() {
+  console.log(cardsContent[0].headerPopup[0]);
+  console.log(cardsContent[0].descriptionPopup[0]);
+}
+window.addEventListener('click', a);
+
 
 // [mobile, mobilePopup, desktop, desktopPopup]
 const mobile = 0;
@@ -236,29 +242,29 @@ function showModalWindow(ind) {
             <div id="modal" class="card1 modal-window">
                 <div class="hearder-container">
                     <div class="modal-header">
-                        <h3>${cardsContent[ind].header[mobilePopup]}</h3>
+                        <h3>${cardsContent[0].headerPopup[0]}</h3>
                         <a class="close-btn close-modal-btn" href="#modal-${ind + 1}">&times;</a>
                     </div>
                     <ul class="tag-group">
-                        <li class="tag">${cardsContent[0].technologies[mobilePopup][0]}</li>
-                        <li class="tag">${cardsContent[0].technologies[mobilePopup][1]}</li>
-                        <li class="tag">${cardsContent[0].technologies[mobilePopup][2]}</li>
+                        <li class="tag">${cardsContent[ind].technologiesPopup[0]}</li>
+                        <li class="tag">${cardsContent[ind].technologiesPopup[1]}</li>
+                        <li class="tag">${cardsContent[ind].technologiesPopup[2]}</li>
                     </ul>
                 </div>
                 <div class="modal-content" class="content">                
-                    <img id="modal-img" src="${cardsContent[ind].image[mobilePopup]}" alt="project${ind + 1} screenshot">
+                    <img id="modal-img" src="${cardsContent[ind].imagePopup}" alt="project${ind + 1} screenshot">
                     <div class="modal-description">                    
                         <p id="modal-p" class="p-format">
-                          ${cardsContent[ind].description[mobilePopup]}
+                          ${cardsContent[ind].descriptionPopup[0]}
                         </p>
-                        <div class="modal-btn-container">                        
-                            <a class="btn modal-btn main-btn modal-btn-1" href="${cardsContent[0].buttons.links[0]}">
-                            ${cardsContent[0].buttons.text[1]}
-                                <img src="${cardsContent[0].buttons.icon[0]}" alt="${cardsContent[0].buttons.text[1]} Icon">
+                        <div class="modal-btn-container">
+                            <a class="btn modal-btn main-btn modal-btn-1" href="${cardsContent[ind].link}">
+                            ${cardsContent[ind].buttonsPopup[0]}
+                                <img src="${cardsContent[ind].iconButtonsPopup[0]}" alt="${cardsContent[ind].buttonsPopup[0]} Icon">
                             </a>
-                            <a class="btn modal-btn main-btn modal-btn-2" href="${cardsContent[0].buttons.links[0]}">
-                            ${cardsContent[0].buttons.text[2]}
-                                <img src="${cardsContent[0].buttons.icon[1]}" alt="${cardsContent[0].buttons.text[2]} Icon">
+                            <a class="btn modal-btn main-btn modal-btn-2" href="${cardsContent[ind].link}">
+                            ${cardsContent[ind].buttonsPopup[1]}
+                                <img src="${cardsContent[ind].iconButtonsPopup[1]}" alt="${cardsContent[ind].buttonsPopup[1]} Icon">
                             </a>
                         </div>
                     </div>
