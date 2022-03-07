@@ -2,7 +2,7 @@
 const body = document.querySelector('body');
 const menuIcon = document.querySelector('.fa-bars');
 const menuContainer = document.querySelector('#menu-mobile-container');
-const closeIcon = document.querySelector('#close-btn');
+const closeIcon = document.querySelector('.close-btn');
 const menuLinks = document.querySelectorAll('.menu-link-mb');
 
 function display() {
@@ -259,7 +259,7 @@ function showModalWindow(ind) {
                 <div class="hearder-container">
                     <div class="modal-header">
                         <h3>${cardsContent[ind].header[mobilePopup]}</h3>
-                        <a id="close-btn" class="close-modal-btn" href="#modal-${ind + 1}">&times;</a>
+                        <a class="close-btn close-modal-btn" href="#modal-${ind + 1}">&times;</a>
                     </div>
                     <ul class="tag-group">
                         <li class="tag">${cardsContent[0].technologies[mobilePopup][0]}</li>
