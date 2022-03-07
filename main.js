@@ -35,9 +35,7 @@ menuLinks.forEach((link) => {
   link.addEventListener('click', disapear);
 });
 
-// Section 2
-// &
-// PopUp Window
+// Section 2 & PopUp Window
 
 const cardsContent = [
   { //1
@@ -172,24 +170,24 @@ function createCard() {
         </header>
   `;
 
-  for (let i = 7; i >= 1; i -= 1) {
+  for (let i = cardsContent.length; i >= 1; i -= 1) {
     if (i === 1) {
       const card = `      
-        <div id="main-card" class="card${i}">        
-            <img src="${cardsContent[i - 1].image[mobile]}" alt="project${i} screenshot">
+        <div id="main-card" class="card${i}">
+            <img src="${cardsContent[i - 1].image}" alt="project${i} screenshot">
             <div class="content">
-                <h3>${cardsContent[i - 1].header[mobile]}</h3>
+                <h3>${cardsContent[i - 1].header}</h3>
                 <p class="p-format card${i}-p">                
-                    ${cardsContent[i - 1].description[mobile]}
+                    ${cardsContent[i - 1].description}
                 </p>
                 <ul class="tag-group">
-                    <li class="tag">${cardsContent[i - 1].technologies[mobile][0]}</li>
-                    <li class="tag">${cardsContent[i - 1].technologies[mobile][1]}</li>
-                    <li class="tag">${cardsContent[i - 1].technologies[mobile][2]}</li>
-                    <li class="tag">${cardsContent[i - 1].technologies[mobile][3]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[0]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[1]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[2]}</li>
+                    <li class="tag">${cardsContent[i - 1].technologies[3]}</li>
                 </ul>
                 <a class="btn see-project-btn main-btn" href="#modal-window">
-                    ${cardsContent[0].buttons.text[0]}
+                    ${cardsContent[i - 1].button}
                 </a>
             </div>
         </div>
@@ -201,9 +199,9 @@ function createCard() {
     const card = `    
     <div id="c${i}" class="card${i} card">
         <div class="content">
-            <h3>${cardsContent[i - 1].header[mobile]}</h3>
+            <h3>${cardsContent[i - 1].header}</h3>
             <p class="p-format">
-                ${cardsContent[i - 1].description[mobile]}
+                ${cardsContent[i - 1].description}
             </p>
             <ul class="tag-group">
                 <li class="tag">${cardsContent[i - 1].technologies[0]}</li>
@@ -212,7 +210,7 @@ function createCard() {
             </ul>
         </div>
         <a class="btn btn-2 see-project-btn" href="#modal-window">
-            ${cardsContent[0].buttons.text[0]}
+            ${cardsContent[i - 1].button}
         </a>
     </div>
     `;
