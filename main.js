@@ -1,34 +1,35 @@
 /* Mobile Menu */
 const body = document.querySelector('body');
 const menuIcon = document.querySelector('.fa-bars');
-const mobileMenu = document.querySelector('#menu-mobile');
-const closeIcon = document.querySelector('#close-menu-btn');
+const menuContainer = document.querySelector('#menu-mobile-container');
+const closeIcon = document.querySelector('#close-btn');
 const menuLinks = document.querySelectorAll('.menu-link-mb');
 
 function display() {
-  mobileMenu.style.width = '100%';
-  mobileMenu.style.transform = 'translate(0%)';
+  menuContainer.style.transform = 'translate(0%)';
   body.style.overflow = 'hidden';
 }
 
 function disapear() {
-  mobileMenu.style.width = '0%';
-  mobileMenu.style.transform = 'translate(-100%)';
+  menuContainer.style.transform = 'translate(-100%)';
   body.style.overflow = 'initial';
 }
 
-function disapearEcsAndResize(event) {
+function disapearEcsResizeClickout(event) {
   if (
     (window.innerWidth > 991)
-    || (event.key === 'Escape')) {
+    || (event.key === 'Escape')
+    || (event.target === menuContainer)
+  ) {
     disapear();
   }
 }
 
 menuIcon.addEventListener('click', display);
 closeIcon.addEventListener('click', disapear);
-body.addEventListener('keyup', disapearEcsAndResize);
-window.addEventListener('resize', disapearEcsAndResize);
+body.addEventListener('keyup', disapearEcsResizeClickout);
+window.addEventListener('resize', disapearEcsResizeClickout);
+window.addEventListener('click', disapearEcsResizeClickout);
 
 menuLinks.forEach((link) => {
   link.addEventListener('click', disapear);
@@ -258,7 +259,7 @@ function showModalWindow(ind) {
                 <div class="hearder-container">
                     <div class="modal-header">
                         <h3>${cardsContent[ind].header[mobilePopup]}</h3>
-                        <a class="close-btn close-modal-btn" href="#modal-${ind + 1}">&times;</a>
+                        <a id="close-btn" class="close-modal-btn" href="#modal-${ind + 1}">&times;</a>
                     </div>
                     <ul class="tag-group">
                         <li class="tag">${cardsContent[0].technologies[mobilePopup][0]}</li>
