@@ -5,7 +5,6 @@ const menuContainer = document.querySelector('#menu-mobile-container');
 const closeIcon = document.querySelector('#closebtn');
 const menuLinks = document.querySelectorAll('.menu-link-mb');
 
-
 function display() {
   menuContainer.style.transform = 'translate(0%)';
   body.style.overflow = 'hidden';
@@ -18,10 +17,10 @@ function disapear() {
 
 function disapearEcsResizeClickout(event) {
   if (
-    (window.innerWidth > 991) ||
-    (event.key === 'Escape') ||
-    (event.target === menuContainer)
-    ) {
+    (window.innerWidth > 991)
+    || (event.key === 'Escape')
+    || (event.target === menuContainer)
+  ) {
     disapear();
   }
 }
