@@ -690,7 +690,8 @@ form #form-message {
   margin-top: 12px;
   padding: 10px;
   z-index: 2;
-  transition: all 0.25s;
+  /* transition: all 0.25s; */
+  transition: transform 0.25s;
 }
 
 #get-in-touch-btn {

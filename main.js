@@ -339,22 +339,30 @@ window.addEventListener('load', updateText);
 
 // Contact Form
 const form = document.forms[0];
-const { email } = form.elements;
+const { full_name, email, message } = form.elements;
 const msg = document.querySelector('#form-message');
 const submitBtn = document.querySelector('#get-in-touch-btn');
 
-submitBtn.addEventListener('mousedown', () => {
-  msg.style.boxShadow = '0 0 20px #fa1f1f';
-  msg.style.fontWeight = 'bolder';
-  msg.style.transform = 'scale(1.04)';
-});
 
-submitBtn.addEventListener('mouseup', () => {
-  msg.style.boxShadow = '0 0 14px #517ad3';
-  msg.style.fontWeight = 'bold';
-  msg.style.transform = 'scale(1)';
-});
+// To Highlight Form Message
+function highlightMessage() {
+  if(
+    // Message just heighlight when all inputs have text and email is UpperCase
+    full_name.value !== "" &&
+    email.value !== "" &&
+    message.value !== ""
+    ) {
+      msg.style.boxShadow = '0 0 20px #fa1f1f';
+      msg.style.transform = 'scale(1.04)';
+      
+      submitBtn.addEventListener('mouseup', () => {
+        msg.style.boxShadow = '0 0 14px #517ad3';
+        msg.style.transform = 'scale(1)';
+      });
+  }
+}
 
+submitBtn.addEventListener('mousedown', highlightMessage);
 
 function checkInput() {
   if (email.value.toLowerCase() !== email.value) {
@@ -365,20 +373,17 @@ function checkInput() {
   }
 }
 
-function showMsg() {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (email.value.toLowerCase() !== email.value) {
-      msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
-      msg.style.display = 'inline-block';
+function showMsg(event) {
+  event.preventDefault();
+  if (email.value.toLowerCase() !== email.value) {
+    msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
+    msg.style.display = 'inline-block';
     } else {
       form.submit();
     }
-  });
 }
 
-showMsg();
-
+form.addEventListener('submit', showMsg);
 form.addEventListener('input', checkInput);
 
 window.addEventListener('load', () => {
@@ -386,3 +391,9 @@ window.addEventListener('load', () => {
 });
 
 
+function printCode() {
+  console.log(full_name.value === "");
+  console.log(email.value === "");
+  console.log(message.value === "");
+}
+window.addEventListener('click', printCode);
