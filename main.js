@@ -364,6 +364,7 @@ function highlightMessage() {
 
 submitBtn.addEventListener('mousedown', highlightMessage);
 
+// This checks if e-mail has valid format and shows message before inmediately
 function checkInput() {
   if (email.value.toLowerCase() !== email.value) {
     msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
@@ -372,6 +373,7 @@ function checkInput() {
     msg.style.display = 'none';
   }
 }
+
 
 function showMsg(event) {
   event.preventDefault();
@@ -389,11 +391,3 @@ form.addEventListener('input', checkInput);
 window.addEventListener('load', () => {
   form.reset();
 });
-
-
-function printCode() {
-  console.log(full_name.value === "");
-  console.log(email.value === "");
-  console.log(message.value === "");
-}
-window.addEventListener('click', printCode);
