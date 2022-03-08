@@ -344,6 +344,14 @@ const msg = document.querySelector('#form-message');
 
 
 
+function checkInput() {
+  if (email.value.toLowerCase() !== email.value) {
+    msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
+    msg.style.display = 'inline-block';
+  } else {
+    msg.style.display = 'none';
+  }
+}
 
 function showMsg() {
   form.addEventListener('submit', (event) => {
@@ -358,6 +366,8 @@ function showMsg() {
 }
 
 showMsg();
+
+form.addEventListener('input', checkInput);
 
 window.addEventListener('load', () => {
   form.reset();
