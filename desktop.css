@@ -29,7 +29,8 @@
 
 .card1:hover img {
   position: relative;
-  transform: scale(1.1);
+
+  /* transform: scale(1.1); */
 }
 
 /* ------------------------ */
@@ -155,6 +156,33 @@
 
 .card:hover .content {
   visibility: hidden;
+}
+
+/* Modal Window */
+.modal-header h3 {
+  font-family: 'Crete Round', serif;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.modal-content {
+  width: auto;
+  flex-direction: initial;
+  margin-left: 0;
+}
+
+#modal-img {
+  margin-bottom: 0;
+  align-self: flex-start;
+  max-width: 60%;
+}
+
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 3%;
 }
 
 /* About Section */
