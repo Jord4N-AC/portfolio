@@ -341,7 +341,19 @@ window.addEventListener('load', updateText);
 const form = document.forms[0];
 const { email } = form.elements;
 const msg = document.querySelector('#form-message');
+const submitBtn = document.querySelector('#get-in-touch-btn');
 
+submitBtn.addEventListener('mousedown', () => {
+  msg.style.boxShadow = '0 0 20px #fa1f1f';
+  msg.style.fontWeight = 'bolder';
+  msg.style.transform = 'scale(1.04)';
+});
+
+submitBtn.addEventListener('mouseup', () => {
+  msg.style.boxShadow = '0 0 14px #517ad3';
+  msg.style.fontWeight = 'bold';
+  msg.style.transform = 'scale(1)';
+});
 
 
 function checkInput() {
