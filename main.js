@@ -3,12 +3,7 @@ const body = document.querySelector('body');
 const menuIcon = document.querySelector('.fa-bars');
 const menuContainer = document.querySelector('#menu-mobile-container');
 const closeIcon = document.querySelector('#close-mobile-menu');
-const menuLinks = document.querySelectorAll('.menu-link-mb')
-
-function a() {
-  console.log(closeIcon);
-}
-window.addEventListener('click', a);
+const menuLinks = document.querySelectorAll('.menu-link-mb');
 
 function display() {
   menuContainer.style.transform = 'translate(0%)';
@@ -22,9 +17,9 @@ function disapear() {
 
 function disapearEcsResizeClickout(event) {
   if (
-    (window.innerWidth > 991) ||
-    (event.key === 'Escape') ||
-    (event.target === menuContainer)
+    (window.innerWidth > 991)
+    || (event.key === 'Escape')
+    || (event.target === menuContainer)
   ) {
     disapear();
   }
@@ -43,7 +38,7 @@ menuLinks.forEach((link) => {
 // Section 2 & PopUp Window
 
 const cardsContent = [
-  { //1
+  { // 1
     header: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     image: 'images/cards/card1.svg',
@@ -51,7 +46,7 @@ const cardsContent = [
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Multi Post Stories', 'Keeping track of hundreds  of components website',],
+    headerPopup: ['Multi Post Stories', 'Keeping track of hundreds  of components website'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -59,16 +54,16 @@ const cardsContent = [
     imagePopup: 'images/cards/card_1_popup.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
-  { //2
+  { // 2
     header: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Profesional Art Printing Data', 'Profesional Art Printing Data More',],
+    headerPopup: ['Profesional Art Printing Data', 'Profesional Art Printing Data More'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -76,16 +71,16 @@ const cardsContent = [
     imagePopup: 'images/cards/card_2&5_desktop_light.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
-  { //3
+  { // 3
     header: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Profesional Art Printing Data', 'Data Dashboard Healthcare',],
+    headerPopup: ['Profesional Art Printing Data', 'Data Dashboard Healthcare'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -93,16 +88,16 @@ const cardsContent = [
     imagePopup: 'images/cards/card_3&6_desktop_light.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
-  { //4
+  { // 4
     header: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Profesional Art Printing Data', 'Website Protfolio',],
+    headerPopup: ['Profesional Art Printing Data', 'Website Protfolio'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -110,16 +105,16 @@ const cardsContent = [
     imagePopup: 'images/cards/card_4&7_desktop_light.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
-  { //5
+  { // 5
     header: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Profesional Art Printing Data', 'Profesional Art Printing Data More',],
+    headerPopup: ['Profesional Art Printing Data', 'Profesional Art Printing Data More'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -127,16 +122,16 @@ const cardsContent = [
     imagePopup: 'images/cards/card_2&5_desktop_light.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
-  { //6
+  { // 6
     header: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Profesional Art Printing Data', 'Data Dashboard Healthcare',],
+    headerPopup: ['Profesional Art Printing Data', 'Data Dashboard Healthcare'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -144,16 +139,16 @@ const cardsContent = [
     imagePopup: 'images/cards/card_3&6_desktop_light.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
-  { //7
+  { // 7
     header: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
     button: 'See Project',
     link: 'https://github.com/Jord4N-AC/portfolio',
     // Popup Window
-    headerPopup: ['Profesional Art Printing Data', 'Website Protfolio',],
+    headerPopup: ['Profesional Art Printing Data', 'Website Protfolio'],
     descriptionPopup: [
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
@@ -161,10 +156,11 @@ const cardsContent = [
     imagePopup: 'images/cards/card_4&7_desktop_light.svg',
     technologiesPopup: ['html', 'bootstrap', 'Ruby on rails'],
     buttonsPopup: ['See Live', 'See Source'],
-    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg',],
+    iconButtonsPopup: ['images/Icons/see_live_icon.svg', 'images/Icons/see_source_icon.svg'],
   },
 ];
 
+const [mobile, desktop] = [0, 1];
 
 function createCard() {
   const worksSection = document.querySelector('#works-section');
@@ -272,16 +268,14 @@ function showModalWindow(ind) {
         </div>`;
 
   cards[ind].insertAdjacentHTML('afterbegin', modalHtmlContent);
-  
+
   // For changing content
   modalHeaders = document.querySelector('.modal-header h3');
   modalParagraphs = document.querySelector('#modal-p');
-  
+
   const modalWindow = document.querySelector('.modal-container');
   const closeModaIcon = document.querySelector('.close-modal-btn');
   body.style.overflow = 'hidden';
-
-
 
   function closeModal() {
     modalWindow.remove();
@@ -309,12 +303,11 @@ buttons.forEach((btn, ind) => {
     showModalWindow(ind);
 
     if (window.innerWidth > 991) {
-      modalHeaders.innerHTML = cardsContent[ind].headerPopup[1];
-      modalParagraphs.innerHTML = cardsContent[ind].descriptionPopup[1];
-      
+      modalHeaders.innerHTML = cardsContent[ind].headerPopup[desktop];
+      modalParagraphs.innerHTML = cardsContent[ind].descriptionPopup[desktop];
     } else {
-      modalHeaders.innerHTML = cardsContent[ind].headerPopup[0];
-      modalParagraphs.innerHTML = cardsContent[ind].descriptionPopup[0];
+      modalHeaders.innerHTML = cardsContent[ind].headerPopup[mobile];
+      modalParagraphs.innerHTML = cardsContent[ind].descriptionPopup[mobile];
     }
   });
 });
@@ -325,19 +318,18 @@ const cardHeaders = document.querySelectorAll('.card h3');
 function updateText() {
   if (window.innerWidth > 991) {
     cardHeaders.forEach((c, ind) => {
-      c.innerHTML = cardsContent[ind + 1].headerPopup[1];
-      
+      [c.innerHTML] = cardsContent[ind + 1].headerPopup[desktop];
     });
 
-    modalHeaders.innerHTML = cardsContent[popupInd].headerPopup[1];
-    modalParagraphs.innerHTML = cardsContent[popupInd].descriptionPopup[1];
+    modalHeaders.innerHTML = cardsContent[popupInd].headerPopup[desktop];
+    modalParagraphs.innerHTML = cardsContent[popupInd].descriptionPopup[desktop];
   } else {
     cardHeaders.forEach((c, ind) => {
-      c.innerHTML = cardsContent[ind + 1].headerPopup[0];
+      c.innerHTML = cardsContent[ind + 1].headerPopup[mobile];
     });
 
-    modalHeaders.innerHTML = cardsContent[popupInd].headerPopup[0];
-    modalParagraphs.innerHTML = cardsContent[popupInd].descriptionPopup[0];
+    modalHeaders.innerHTML = cardsContent[popupInd].headerPopup[mobile];
+    modalParagraphs.innerHTML = cardsContent[popupInd].descriptionPopup[mobile];
   }
 }
 
