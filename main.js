@@ -318,7 +318,7 @@ const cardHeaders = document.querySelectorAll('.card h3');
 function updateText() {
   if (window.innerWidth > 991) {
     cardHeaders.forEach((c, ind) => {
-      [c.innerHTML] = cardsContent[ind + 1].headerPopup[desktop];
+      c.innerHTML = cardsContent[ind + 1].headerPopup[desktop];
     });
 
     modalHeaders.innerHTML = cardsContent[popupInd].headerPopup[desktop];
@@ -334,6 +334,7 @@ function updateText() {
 }
 
 window.addEventListener('resize', updateText);
+window.addEventListener('load', updateText);
 
 
 // Contact Form
