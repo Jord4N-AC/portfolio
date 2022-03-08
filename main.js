@@ -340,15 +340,17 @@ window.addEventListener('load', updateText);
 // Contact Form
 const form = document.forms[0];
 const { email } = form.elements;
-console.log({ email });
-const msg = document.querySelector('small');
+const msg = document.querySelector('#form-message');
+
+
+
 
 function showMsg() {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
     if (email.value.toLowerCase() !== email.value) {
       msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
-      msg.classList.add('show');
+      msg.style.display = 'inline-block';
     } else {
       form.submit();
     }
@@ -356,3 +358,9 @@ function showMsg() {
 }
 
 showMsg();
+
+window.addEventListener('load', () => {
+  form.reset();
+});
+
+

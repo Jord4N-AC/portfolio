@@ -675,9 +675,9 @@ form textarea::placeholder {
 }
 
 /* Contact Form */
-form .show {
+form #form-message {
   font-weight: bold;
-  display: inline-block;
+  display: none;  
   align-self: center;
   max-width: fit-content;
   font-size: medium;
@@ -685,11 +685,12 @@ form .show {
   color: rgb(223, 110, 34);
   border: 3px solid #7a487200;
   box-shadow: 0 0 14px #517ad3;
+  /* box-shadow: 0 0 14px #5d411c; */
   border-radius: 5px;
   margin-top: 12px;
   padding: 10px;
   z-index: 2;
-  transition: all 0.45s;
+  transition: all 0.25s;
 }
 
 #get-in-touch-btn {
