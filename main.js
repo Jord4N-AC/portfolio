@@ -2,8 +2,13 @@
 const body = document.querySelector('body');
 const menuIcon = document.querySelector('.fa-bars');
 const menuContainer = document.querySelector('#menu-mobile-container');
-const closeIcon = document.querySelector('.close-btn');
-const menuLinks = document.querySelectorAll('.menu-link-mb');
+const closeIcon = document.querySelector('#close-mobile-menu');
+const menuLinks = document.querySelectorAll('.menu-link-mb')
+
+function a() {
+  console.log(closeIcon);
+}
+window.addEventListener('click', a);
 
 function display() {
   menuContainer.style.transform = 'translate(0%)';
@@ -12,14 +17,14 @@ function display() {
 
 function disapear() {
   menuContainer.style.transform = 'translate(-100%)';
-  // body.style.overflow = 'initial';
+  body.style.overflow = 'initial';
 }
 
 function disapearEcsResizeClickout(event) {
   if (
-    (window.innerWidth > 991)
-    || (event.key === 'Escape')
-    || (event.target === menuContainer)
+    (window.innerWidth > 991) ||
+    (event.key === 'Escape') ||
+    (event.target === menuContainer)
   ) {
     disapear();
   }
@@ -160,18 +165,6 @@ const cardsContent = [
   },
 ];
 
-function a() {
-  console.log(cardsContent[0].heaader[0]);
-  console.log(cardsContent[0].descriptionPopup[0]);
-}
-window.addEventListener('click', a);
-
-
-// [mobile, mobilePopup, desktop, desktopPopup]
-const mobile = 0;
-const mobilePopup = 1;
-const desktop = 2;
-const desktopPopup = 3;
 
 function createCard() {
   const worksSection = document.querySelector('#works-section');
@@ -279,31 +272,33 @@ function showModalWindow(ind) {
         </div>`;
 
   cards[ind].insertAdjacentHTML('afterbegin', modalHtmlContent);
-  body.style.overflow = 'hidden';
-
+  
   // For changing content
   modalHeaders = document.querySelector('.modal-header h3');
   modalParagraphs = document.querySelector('#modal-p');
-
+  
   const modalWindow = document.querySelector('.modal-container');
   const closeModaIcon = document.querySelector('.close-modal-btn');
+  body.style.overflow = 'hidden';
 
-  closeModaIcon.addEventListener('click', () => {
+
+
+  function closeModal() {
     modalWindow.remove();
     body.style.overflow = 'initial';
-  });
+  }
+
+  closeModaIcon.addEventListener('click', closeModal);
 
   body.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
-      modalWindow.remove();
-      body.style.overflow = 'initial';
+      closeModal();
     }
   });
 
   window.addEventListener('click', (event) => {
     if (event.target === modalWindow) {
-      modalWindow.remove();
-      body.style.overflow = 'initial';
+      closeModal();
     }
   });
 }
@@ -316,6 +311,7 @@ buttons.forEach((btn, ind) => {
     if (window.innerWidth > 991) {
       modalHeaders.innerHTML = cardsContent[ind].headerPopup[1];
       modalParagraphs.innerHTML = cardsContent[ind].descriptionPopup[1];
+      
     } else {
       modalHeaders.innerHTML = cardsContent[ind].headerPopup[0];
       modalParagraphs.innerHTML = cardsContent[ind].descriptionPopup[0];
