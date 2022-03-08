@@ -338,7 +338,7 @@ window.addEventListener('load', updateText);
 
 // Contact Form
 const form = document.forms[0];
-const { full_name, email, message } = form.elements;
+const { fullName, email, message } = form.elements;
 const msg = document.querySelector('#form-message');
 const submitBtn = document.querySelector('#get-in-touch-btn');
 
@@ -346,7 +346,7 @@ const submitBtn = document.querySelector('#get-in-touch-btn');
 function highlightMessage() {
   if (
     // Message just heighlight when all inputs have text and email is UpperCase
-    full_name.value !== ''
+    fullName.value !== ''
     && email.value !== ''
     && message.value !== ''
   ) {
@@ -388,3 +388,8 @@ form.addEventListener('input', checkInput);
 window.addEventListener('load', () => {
   form.reset();
 });
+
+function printCode() {
+  console.log(fullName);
+}
+window.addEventListener('click', printCode);
