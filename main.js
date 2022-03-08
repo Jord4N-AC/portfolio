@@ -388,8 +388,3 @@ form.addEventListener('input', checkInput);
 window.addEventListener('load', () => {
   form.reset();
 });
-
-function printCode() {
-  console.log(fullName);
-}
-window.addEventListener('click', printCode);
