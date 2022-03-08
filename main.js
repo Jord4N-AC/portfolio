@@ -336,29 +336,27 @@ function updateText() {
 window.addEventListener('resize', updateText);
 window.addEventListener('load', updateText);
 
-
 // Contact Form
 const form = document.forms[0];
 const { full_name, email, message } = form.elements;
 const msg = document.querySelector('#form-message');
 const submitBtn = document.querySelector('#get-in-touch-btn');
 
-
 // To Highlight Form Message
 function highlightMessage() {
-  if(
+  if (
     // Message just heighlight when all inputs have text and email is UpperCase
-    full_name.value !== "" &&
-    email.value !== "" &&
-    message.value !== ""
-    ) {
-      msg.style.boxShadow = '0 0 20px #fa1f1f';
-      msg.style.transform = 'scale(1.04)';
-      
-      submitBtn.addEventListener('mouseup', () => {
-        msg.style.boxShadow = '0 0 14px #517ad3';
-        msg.style.transform = 'scale(1)';
-      });
+    full_name.value !== ''
+    && email.value !== ''
+    && message.value !== ''
+  ) {
+    msg.style.boxShadow = '0 0 20px #fa1f1f';
+    msg.style.transform = 'scale(1.04)';
+
+    submitBtn.addEventListener('mouseup', () => {
+      msg.style.boxShadow = '0 0 14px #517ad3';
+      msg.style.transform = 'scale(1)';
+    });
   }
 }
 
@@ -374,15 +372,14 @@ function checkInput() {
   }
 }
 
-
 function showMsg(event) {
   event.preventDefault();
   if (email.value.toLowerCase() !== email.value) {
     msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
     msg.style.display = 'inline-block';
-    } else {
-      form.submit();
-    }
+  } else {
+    form.submit();
+  }
 }
 
 form.addEventListener('submit', showMsg);

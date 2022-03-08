@@ -678,9 +678,9 @@ form textarea::placeholder {
 form #form-message {
   font-weight: bold;
   line-height: 23px;
-  display: none;  
+  display: none;
   align-self: center;
-  max-width: fit-content;
+  max-width: max-content;
   font-size: medium;
   background-color: #22f0b2;
   color: rgb(223, 110, 34);
