@@ -677,6 +677,7 @@ form textarea::placeholder {
 /* Contact Form */
 form #form-message {
   font-weight: bold;
+  line-height: 23px;
   display: none;  
   align-self: center;
   max-width: fit-content;
@@ -685,12 +686,10 @@ form #form-message {
   color: rgb(223, 110, 34);
   border: 3px solid #7a487200;
   box-shadow: 0 0 14px #517ad3;
-  /* box-shadow: 0 0 14px #5d411c; */
   border-radius: 5px;
-  margin-top: 12px;
-  padding: 10px;
+  margin-top: 24px;
+  padding: 15px;
   z-index: 2;
-  /* transition: all 0.25s; */
   transition: transform 0.25s;
 }
 

@@ -229,6 +229,11 @@ form {
   margin: 0;
 }
 
+/* Contact Form */
+form #form-message {
+  align-self: flex-start;
+}
+
 #get-in-touch-btn {
   align-self: start;
 }
