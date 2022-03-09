@@ -318,7 +318,7 @@ const cardHeaders = document.querySelectorAll('.card h3');
 function updateText() {
   if (window.innerWidth > 991) {
     cardHeaders.forEach((c, ind) => {
-      [c.innerHTML] = cardsContent[ind + 1].headerPopup[desktop];
+      c.innerHTML = cardsContent[ind + 1].headerPopup[desktop];
     });
 
     modalHeaders.innerHTML = cardsContent[popupInd].headerPopup[desktop];
@@ -334,3 +334,57 @@ function updateText() {
 }
 
 window.addEventListener('resize', updateText);
+window.addEventListener('load', updateText);
+
+// Contact Form
+const form = document.forms[0];
+const { fullName, email, message } = form.elements;
+const msg = document.querySelector('#form-message');
+const submitBtn = document.querySelector('#get-in-touch-btn');
+
+// To Highlight Form Message
+function highlightMessage() {
+  if (
+    // Message just heighlight when all inputs have text and email is UpperCase
+    fullName.value !== ''
+    && email.value !== ''
+    && message.value !== ''
+  ) {
+    msg.style.boxShadow = '0 0 20px #fa1f1f';
+    msg.style.transform = 'scale(1.04)';
+
+    submitBtn.addEventListener('mouseup', () => {
+      msg.style.boxShadow = '0 0 14px #517ad3';
+      msg.style.transform = 'scale(1)';
+    });
+  }
+}
+
+submitBtn.addEventListener('mousedown', highlightMessage);
+
+// This checks if e-mail has valid format and shows message before inmediately
+function checkInput() {
+  if (email.value.toLowerCase() !== email.value) {
+    msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
+    msg.style.display = 'inline-block';
+  } else {
+    msg.style.display = 'none';
+  }
+}
+
+function showMsg(event) {
+  event.preventDefault();
+  if (email.value.toLowerCase() !== email.value) {
+    msg.textContent = 'E-mail should be in LOWER CASE, Form NOT submitted';
+    msg.style.display = 'inline-block';
+  } else {
+    form.submit();
+  }
+}
+
+form.addEventListener('submit', showMsg);
+form.addEventListener('input', checkInput);
+
+window.addEventListener('load', () => {
+  form.reset();
+});
