@@ -414,3 +414,23 @@ function storageAvailable(type) {
           (storage && storage.length !== 0);
   }
 }
+
+if (storageAvailable('localStorage')) {
+  const inputs = [form.fullName, form.email, form.message];
+  inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      const inputValues = {
+        fullName: form.fullName.value,
+        email: form.email.value,
+        message: form.message.value
+      };
+      localStorage.setItem('formData', JSON.stringify(inputValues));
+    });
+  });
+
+  const getFormData = JSON.parse(localStorage.getItem('formData'));
+
+  form.fullName.value = getFormData.fullName;
+  form.email.value = getFormData.email;
+  form.message.value = getFormData.message;
+}
