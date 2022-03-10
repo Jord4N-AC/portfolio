@@ -173,12 +173,12 @@ function createCard() {
 
   for (let i = cardsContent.length; i >= 1; i -= 1) {
     if (i === 1) {
-      const card = `      
+      const card = `
         <div id="main-card" class="card${i}">
             <img src="${cardsContent[i - 1].image}" alt="project${i} screenshot">
             <div class="content">
                 <h3>${cardsContent[i - 1].header}</h3>
-                <p class="p-format card${i}-p">                
+                <p class="p-format card${i}-p">
                     ${cardsContent[i - 1].description}
                 </p>
                 <ul class="tag-group">
@@ -197,7 +197,7 @@ function createCard() {
       break;
     }
 
-    const card = `    
+    const card = `
     <div id="c${i}" class="card${i} card">
         <div class="content">
             <h3>${cardsContent[i - 1].header}</h3>
@@ -248,7 +248,7 @@ function showModalWindow(ind) {
                 </div>
                 <div class="modal-content" class="content">
                     <img id="modal-img" src="${cardsContent[ind].imagePopup}" alt="project${ind + 1} screenshot">
-                    <div class="modal-description">                    
+                    <div class="modal-description">
                         <p id="modal-p" class="p-format">
                           ${cardsContent[ind].descriptionPopup[0]}
                         </p>
@@ -264,7 +264,7 @@ function showModalWindow(ind) {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>`;
 
   cards[ind].insertAdjacentHTML('afterbegin', modalHtmlContent);
@@ -385,6 +385,51 @@ function showMsg(event) {
 form.addEventListener('submit', showMsg);
 form.addEventListener('input', checkInput);
 
-window.addEventListener('load', () => {
-  form.reset();
-});
+// window.addEventListener('load', () => {
+//   form.reset();
+// });
+
+// Local Storage
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+    // everything except Firefox
+      e.code === 22
+          // Firefox
+          || e.code === 1014
+          // test name field too, because code might not be present
+          // everything except Firefox
+          || e.name === 'QuotaExceededError'
+          // Firefox
+          || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+          // acknowledge QuotaExceededError only if there's something already stored
+          && (storage && storage.length !== 0);
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  const inputs = [form.fullName, form.email, form.message];
+  inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      const inputValues = {
+        fullName: form.fullName.value,
+        email: form.email.value,
+        message: form.message.value,
+      };
+      localStorage.setItem('formData', JSON.stringify(inputValues));
+    });
+  });
+
+  const getFormData = JSON.parse(localStorage.getItem('formData'));
+
+  form.fullName.value = getFormData.fullName;
+  form.email.value = getFormData.email;
+  form.message.value = getFormData.message;
+}
