@@ -12,13 +12,11 @@ function display() {
 
 function disapear() {
   menuContainer.style.transform = 'translate(-100%)';
-  body.style.overflow = 'initial';
 }
 
 function disapearEcsResizeClickout(event) {
   if (
-    (window.innerWidth > 991)
-    || (event.key === 'Escape')
+    (event.key === 'Escape')
     || (event.target === menuContainer)
   ) {
     disapear();
